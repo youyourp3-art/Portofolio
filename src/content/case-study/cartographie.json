@@ -1,0 +1,12 @@
+{
+  "intro": "Atlas cartographique du diagnostic — 51 cartes thématiques réparties en six catégories, produites sous QGIS.",
+  "categories": [
+    { "cat": "Évolution historique", "range": "1–7", "img": "/ain-benian/carte-1.png" },
+    { "cat": "Milieu physique", "range": "8–11", "img": "/ain-benian/carte-8.png" },
+    { "cat": "Contraintes", "range": "12–16", "img": "/ain-benian/carte-12.png" },
+    { "cat": "Occupation du sol", "range": "17–23", "img": "/ain-benian/carte-17.png" },
+    { "cat": "Mobilité", "range": "24–29", "img": "/ain-benian/carte-24.png" },
+    { "cat": "Équipements", "range": "30–51", "img": "/ain-benian/carte-30.png" }
+  ],
+  "note": "Extraits présentés ici à titre d'illustration — l'atlas complet compte 51 cartes filtrables par thème."
+}

@@ -1,0 +1,48 @@
+{
+  "intro": "Analyse AFOM et propositions d'aménagement — stratégie de développement durable pour Aïn Bénian à l'horizon 2040.",
+  "atouts": [
+    "Position littorale stratégique sur la Méditerranée",
+    "Population active importante (59,26 %)",
+    "Pic démographique productif (35–44 ans)",
+    "Masse critique suffisante (75 739 habitants)",
+    "Accessibilité routière via la RN11 et les voies structurantes",
+    "Patrimoine naturel et paysager valorisable",
+    "Potentiel touristique balnéaire"
+  ],
+  "faiblesses": [
+    "Saturation territoriale critique (4 734 hab/km²)",
+    "Taux d'urbanisation quasi total (97,2 %)",
+    "Infrastructures scolaires saturées (16 432 jeunes)",
+    "Ratio de dépendance élevé (68,7/100)",
+    "Déficit en équipements structurants (lycées, hôpitaux)",
+    "Contraintes naturelles (pente, sismicité)",
+    "Congestion routière en période estivale"
+  ],
+  "opportunites": [
+    "Actifs qualifiés attractifs pour l'économie locale",
+    "Potentiel de formation de la jeunesse (~11 000 jeunes)",
+    "Mutualisation intercommunale possible (CA Chéraga : 261 229 hab.)",
+    "Renouvellement urbain (friches industrielles, dents creuses)",
+    "Valorisation du littoral via ZET et projets touristiques",
+    "Extension de la zone d'activité économique",
+    "Développement de l'agriculture urbaine (agriparcs)"
+  ],
+  "menaces": [
+    "Croissance démographique explosive (+9 561 hab. projetés)",
+    "Crise du logement imminente (+3 000 unités nécessaires)",
+    "Vieillissement rapide (+54 % d'ici 2040)",
+    "Risque de ghettoïsation et de ségrégation spatiale",
+    "Dégradation du cadre de vie (densification anarchique)",
+    "Pression sur les ressources en eau",
+    "Risques naturels (glissement de terrain, séisme)"
+  ],
+  "axes": [
+    { "titre": "Renouvellement urbain", "desc": "Transformation des friches industrielles et valorisation des dents creuses." },
+    { "titre": "Mobilité durable", "desc": "Tramway, mobilité douce et contournement routier." },
+    { "titre": "Tourisme intégré", "desc": "Zone d'Expansion Touristique (ZET) et valorisation littorale." },
+    { "titre": "Agriculture urbaine", "desc": "Agriparcs et agriculture résiliente." },
+    { "titre": "Industrie innovante", "desc": "Extension de la zone d'activité et transition énergétique." },
+    { "titre": "Équipements structurants", "desc": "Programmation urbaine prioritaire (lycées, CEM, hôpital, sport)." }
+  ],
+  "budgetTotal": "227 milliards DZD"
+}

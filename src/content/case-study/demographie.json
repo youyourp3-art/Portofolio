@@ -1,0 +1,29 @@
+{
+  "intro": "Dynamique, structure et prospective de la population d'Aïn Bénian.",
+  "stats": [
+    { "value": "75 739", "label": "Population 2020", "sub": "+2,1 %/an" },
+    { "value": "4 734", "label": "Densité (hab/km²)", "sub": "" },
+    { "value": "59,26 %", "label": "Population active", "sub": "" },
+    { "value": "204 821", "label": "Projection 2040", "sub": "+170 % en 20 ans" }
+  ],
+  "evolution": [
+    { "annee": 2020, "population": 75739, "densite": 4734, "taux": 2.1, "dependance": 68.7 },
+    { "annee": 2025, "population": 97125, "densite": 6069, "taux": 2.5, "dependance": 72.3 },
+    { "annee": 2030, "population": 124551, "densite": 7784, "taux": 2.3, "dependance": 75.8 },
+    { "annee": 2040, "population": 204821, "densite": 12801, "taux": 3.1, "dependance": 82.1 }
+  ],
+  "noteEvolution": "La densité passera de 4 734 hab/km² en 2020 à 12 801 hab/km² en 2040, confirmant la saturation territoriale croissante. Le taux de croissance reste élevé (2,1 à 3,1 %), générant une pression démographique continue.",
+  "structureAge": [
+    "Population jeune dominante : pic productif entre 35 et 44 ans",
+    "Base large : 16 432 jeunes de 0 à 19 ans, forte pression scolaire",
+    "Population active : 59,26 % de la population totale",
+    "Ratio de dépendance : 68,7 personnes dépendantes pour 100 actifs",
+    "Vieillissement annoncé : +54 % de personnes âgées d'ici 2040"
+  ],
+  "afom": {
+    "atouts": ["Population active importante (59,26 %)", "Pic démographique productif (35–44 ans)", "Masse critique suffisante (75 739 hab.)", "Potentiel formation jeunesse (~11 000)"],
+    "faiblesses": ["Saturation territoriale critique (4 734 hab/km²)", "Infrastructures scolaires saturées", "Ratio de dépendance élevé (68,7/100)", "Foncier quasi épuisé (97,2 % urbanisé)"],
+    "opportunites": ["Actifs qualifiés attractifs", "Mutualisation intercommunale possible", "Renouvellement urbain (friches, dents creuses)", "Valorisation du patrimoine littoral"],
+    "menaces": ["Croissance démographique explosive (+9 561)", "Crise du logement imminente (+3 000 nécessaires)", "Vieillissement rapide (+54 % d'ici 2040)", "Risque de ghettoïsation et de ségrégation"]
+  }
+}

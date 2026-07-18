@@ -1,0 +1,204 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Les fichiers uploadés (photo, CV, captures) sont stockés ici et servis
+# directement par le site — pas de base de données, pas de serveur à gérer.
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+locale: "fr"
+
+collections:
+  - name: "pages"
+    label: "Pages du site"
+    files:
+      - name: "home"
+        label: "Accueil"
+        file: "src/content/home.json"
+        fields:
+          - { label: "Titre — ligne 1", name: "tagline1", widget: "string" }
+          - { label: "Titre — ligne 2", name: "tagline2", widget: "string" }
+          - { label: "Titre — ligne 3", name: "tagline3", widget: "string" }
+          - { label: "Texte d'introduction", name: "intro", widget: "text" }
+
+      - name: "about"
+        label: "À propos"
+        file: "src/content/about.json"
+        fields:
+          - { label: "Parcours", name: "p1", widget: "text" }
+          - { label: "Pourquoi la géomatique", name: "p3", widget: "text" }
+          - { label: "Ce que je cherche", name: "p4", widget: "text" }
+
+      - name: "contact"
+        label: "Contact"
+        file: "src/content/contact.json"
+        fields:
+          - { label: "Bio courte", name: "bio", widget: "text" }
+
+  - name: "media"
+    label: "Médiathèque"
+    files:
+      - name: "assets"
+        label: "Fichiers du site"
+        file: "src/content/media.json"
+        fields:
+          - { label: "Photo de profil", name: "profilePhoto", widget: "image", required: false }
+          - { label: "CV (PDF)", name: "cvPdf", widget: "file", required: false }
+          - { label: "Lettre de motivation — générale (PDF)", name: "lettrePdf", widget: "file", required: false }
+          - { label: "Lettre de motivation — Trier (PDF)", name: "lettreTrierPdf", widget: "file", required: false }
+          - { label: "Capture QGIS — Diagnostic Djelfa", name: "qgisDjelfa", widget: "image", required: false }
+          - { label: "Capture QGIS — Étude Sétif", name: "qgisSetif", widget: "image", required: false }
+          - { label: "Capture interface WebGIS", name: "webgisScreen", widget: "image", required: false }
+
+  - name: "diagnostic"
+    label: "Diagnostic Aïn Bénian"
+    files:
+      - name: "accueil"
+        label: "01 — Accueil"
+        file: "src/content/case-study/accueil.json"
+        fields:
+          - { label: "Tags", name: "tags", widget: "list" }
+          - { label: "Titre", name: "titre", widget: "string" }
+          - { label: "Introduction", name: "intro", widget: "text" }
+          - label: "Statistiques clés"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Valeur", name: "value", widget: "string" }
+              - { label: "Libellé", name: "label", widget: "string" }
+          - { label: "Problématique centrale", name: "problematique", widget: "text" }
+          - { label: "Hypothèse directrice", name: "hypothese", widget: "text" }
+          - label: "Changements de paradigme"
+            name: "paradigmes"
+            widget: "list"
+            fields:
+              - { label: "Titre", name: "titre", widget: "string" }
+              - { label: "Détail", name: "detail", widget: "text" }
+
+      - name: "demographie"
+        label: "02 — Démographie"
+        file: "src/content/case-study/demographie.json"
+        fields:
+          - { label: "Introduction", name: "intro", widget: "text" }
+          - label: "Statistiques clés"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Valeur", name: "value", widget: "string" }
+              - { label: "Libellé", name: "label", widget: "string" }
+              - { label: "Sous-texte", name: "sub", widget: "string", required: false }
+          - label: "Évolution par année"
+            name: "evolution"
+            widget: "list"
+            fields:
+              - { label: "Année", name: "annee", widget: "number" }
+              - { label: "Population", name: "population", widget: "number" }
+              - { label: "Densité (hab/km²)", name: "densite", widget: "number" }
+              - { label: "Taux de croissance (%)", name: "taux", widget: "number" }
+              - { label: "Ratio de dépendance", name: "dependance", widget: "number" }
+          - { label: "Note sur l'évolution", name: "noteEvolution", widget: "text" }
+          - { label: "Structure par âge (points)", name: "structureAge", widget: "list" }
+          - label: "AFOM démographique"
+            name: "afom"
+            widget: "object"
+            fields:
+              - { label: "Atouts", name: "atouts", widget: "list" }
+              - { label: "Faiblesses", name: "faiblesses", widget: "list" }
+              - { label: "Opportunités", name: "opportunites", widget: "list" }
+              - { label: "Menaces", name: "menaces", widget: "list" }
+
+      - name: "cartographie"
+        label: "03 — Cartographie"
+        file: "src/content/case-study/cartographie.json"
+        fields:
+          - { label: "Introduction", name: "intro", widget: "text" }
+          - label: "Catégories de cartes"
+            name: "categories"
+            widget: "list"
+            fields:
+              - { label: "Catégorie", name: "cat", widget: "string" }
+              - { label: "Plage (ex. 1–7)", name: "range", widget: "string" }
+              - { label: "Image d'illustration", name: "img", widget: "image" }
+          - { label: "Note", name: "note", widget: "text" }
+
+      - name: "equipements"
+        label: "04 — Équipements"
+        file: "src/content/case-study/equipements.json"
+        fields:
+          - { label: "Introduction", name: "intro", widget: "text" }
+          - label: "Groupes d'équipements"
+            name: "groupes"
+            widget: "list"
+            fields:
+              - { label: "Catégorie", name: "cat", widget: "string" }
+              - label: "Éléments"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Nom", name: "nom", widget: "string" }
+                  - { label: "Existant", name: "existant", widget: "number" }
+                  - { label: "Besoin estimé", name: "besoin", widget: "number" }
+
+      - name: "afom"
+        label: "05 — AFOM"
+        file: "src/content/case-study/afom.json"
+        fields:
+          - { label: "Introduction", name: "intro", widget: "text" }
+          - { label: "Atouts", name: "atouts", widget: "list" }
+          - { label: "Faiblesses", name: "faiblesses", widget: "list" }
+          - { label: "Opportunités", name: "opportunites", widget: "list" }
+          - { label: "Menaces", name: "menaces", widget: "list" }
+          - label: "Axes de propositions"
+            name: "axes"
+            widget: "list"
+            fields:
+              - { label: "Titre", name: "titre", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+          - { label: "Budget total", name: "budgetTotal", widget: "string" }
+
+      - name: "strategie"
+        label: "06 — Stratégie"
+        file: "src/content/case-study/strategie.json"
+        fields:
+          - { label: "Introduction", name: "intro", widget: "text" }
+          - label: "Projets phares"
+            name: "projets"
+            widget: "list"
+            fields:
+              - { label: "Nom", name: "nom", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+              - { label: "Coût", name: "cout", widget: "string" }
+              - { label: "Échéance", name: "echeance", widget: "string" }
+              - { label: "Priorité", name: "priorite", widget: "string" }
+          - label: "Budget par axe"
+            name: "budgetAxes"
+            widget: "list"
+            fields:
+              - { label: "Axe", name: "axe", widget: "string" }
+              - { label: "Pourcentage", name: "pourcentage", widget: "number" }
+          - label: "Phasage temporel"
+            name: "phasage"
+            widget: "list"
+            fields:
+              - { label: "Période", name: "periode", widget: "string" }
+              - { label: "Budget", name: "budget", widget: "string" }
+              - { label: "Note", name: "note", widget: "text" }
+          - label: "Statistiques de vision"
+            name: "visionStats"
+            widget: "list"
+            fields:
+              - { label: "Valeur", name: "value", widget: "string" }
+              - { label: "Libellé", name: "label", widget: "string" }
+
+      - name: "dashboard"
+        label: "07 — Dashboard"
+        file: "src/content/case-study/dashboard.json"
+        fields:
+          - { label: "Introduction", name: "intro", widget: "text" }
+          - label: "Modules gérés"
+            name: "modules"
+            widget: "list"
+            fields:
+              - { label: "Nom", name: "nom", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }

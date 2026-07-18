@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: #EEEDE3;
+  color: #161F1B;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.graticule-bg {
+  background-image:
+    linear-gradient(#B9C2AF 1px, transparent 1px),
+    linear-gradient(90deg, #B9C2AF 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: -1px -1px;
+}
+
+.crosshair::before,
+.crosshair::after {
+  content: "";
+  position: absolute;
+  background: currentColor;
+}
+
+::selection {
+  background: #C1451D;
+  color: #F7F6EF;
+}
+
+:focus-visible {
+  outline: 2px solid #C1451D;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}

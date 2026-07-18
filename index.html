@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/grid.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azzaz Bouhenni Nazim — Géomatique &amp; Aménagement Urbain</title>
+    <meta name="description" content="Portfolio SIG / WebGIS — Azzaz Bouhenni Nazim, étudiant en Master Aménagement Urbain, USTHB Alger." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Nécessaire pour que le lien d'invitation Netlify Identity (envoyé par email)
+         fonctionne correctement et redirige vers /admin/ après confirmation. -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
