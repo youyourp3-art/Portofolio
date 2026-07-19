@@ -1,8 +1,18 @@
 {
   "intro": "Mes réalisations cartographiques personnelles — chaque fiche détaille le contexte, les données et le traitement effectué sous QGIS.",
   "projects": [
-    { "tag": "PROJET 01", "title": "Diagnostic territorial — Djelfa", "desc": "Relevé de terrain, analyse socio-économique et spatiale, formulation de recommandations d'aménagement.", "mediaKey": "qgisDjelfa" },
-    { "tag": "PROJET 02", "title": "Étude de terrain — Sétif", "desc": "Analyse du réseau viaire et des espaces publics, évaluation de la conformité aux règlements d'urbanisme.", "mediaKey": "qgisSetif" }
+    {
+      "tag": "PROJET 01",
+      "title": "Diagnostic territorial — Djelfa",
+      "desc": "Relevé de terrain, analyse socio-économique et spatiale, formulation de recommandations d'aménagement.",
+      "mediaKey": "qgisDjelfa"
+    },
+    {
+      "tag": "PROJET 02",
+      "title": "Étude de terrain — Sétif",
+      "desc": "Analyse du réseau viaire et des espaces publics, évaluation de la conformité aux règlements d'urbanisme.",
+      "mediaKey": "qgisSetif"
+    }
   ],
-  "addNote": "+ Ajouter un projet — fiche : contexte / objectif / données / traitement / résultat"
+  "addNote": "Hier ist der Praktikumsbericht aus Sétif auf Französisch, da er in dieser Sprache angefordert wurde. Die Karten wurden in der Gruppe mithilfe von Python, dem QNEAT3-Tool und QuickOSM erstellt, um bestimmte Felddaten zu erfassen.  https://drive.google.com/file/d/19PjOudqfSLe8kIELGAAfYO72mLOqs62_/view?usp=drive_link"
 }
