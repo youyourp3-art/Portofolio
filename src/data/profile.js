@@ -147,4 +147,10 @@ export const nav = [
   { id: "etude-cas", num: "09", label: { fr: "Étude de cas — Aïn Bénian", de: "Fallstudie — Aïn Bénian" } },
   { id: "admin", num: "10", label: { fr: "Administration", de: "Administration" } },
   { id: "contact", num: "11", label: { fr: "Contact", de: "Kontakt" } },
+  {
+    id: "admin-panel",
+    num: "12",
+    label: { fr: "Panel Admin", de: "Admin-Panel" },
+    external: "https://azzaz-geomatik.netlify.app/admin/#/collections/pages",
+  },
 ];

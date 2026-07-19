@@ -1,6 +1,6 @@
 import { nav, profile } from "../data/profile";
 import { useLang } from "../context/LangContext";
-import { Layers, X } from "lucide-react";
+import { Layers, X, ExternalLink } from "lucide-react";
 
 export default function Sidebar({ active, onSelect, open, onClose }) {
   const { lang, toggle } = useLang();
@@ -33,6 +33,51 @@ export default function Sidebar({ active, onSelect, open, onClose }) {
         <nav className="flex-1 overflow-y-auto py-3">
           {nav.map((item) => {
             const isActive = item.id === active;
+            const itemClasses = `w-full text-left px-5 py-3 flex items-start gap-3 border-l-2 transition-colors
+                ${
+                  isActive
+                    ? "border-accent bg-paper2/[0.06] text-paper2"
+                    : "border-transparent text-paper2/55 hover:text-paper2/85 hover:bg-paper2/[0.04]"
+                }`;
+
+            const dot = (
+              <span
+                className={`mt-[3px] w-3.5 h-3.5 shrink-0 border ${
+                  isActive ? "bg-accent border-accent" : "border-paper2/40"
+                }`}
+              />
+            );
+
+            const content = (
+              <span>
+                <span className="block font-mono text-[10px] tracking-widest text-paper2/40">
+                  {item.num}
+                </span>
+                <span className="flex items-center gap-1.5 font-display text-sm leading-snug">
+                  {item.label[lang]}
+                  {item.external && (
+                    <ExternalLink size={11} className="text-paper2/40 shrink-0" />
+                  )}
+                </span>
+              </span>
+            );
+
+            if (item.external) {
+              return (
+                <a
+                  key={item.id}
+                  href={item.external}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={itemClasses}
+                  onClick={onClose}
+                >
+                  {dot}
+                  {content}
+                </a>
+              );
+            }
+
             return (
               <button
                 key={item.id}
@@ -40,28 +85,10 @@ export default function Sidebar({ active, onSelect, open, onClose }) {
                   onSelect(item.id);
                   onClose();
                 }}
-                className={`w-full text-left px-5 py-3 flex items-start gap-3 border-l-2 transition-colors
-                ${
-                  isActive
-                    ? "border-accent bg-paper2/[0.06] text-paper2"
-                    : "border-transparent text-paper2/55 hover:text-paper2/85 hover:bg-paper2/[0.04]"
-                }`}
+                className={itemClasses}
               >
-                <span
-                  className={`mt-[3px] w-3.5 h-3.5 shrink-0 border ${
-                    isActive
-                      ? "bg-accent border-accent"
-                      : "border-paper2/40"
-                  }`}
-                />
-                <span>
-                  <span className="block font-mono text-[10px] tracking-widest text-paper2/40">
-                    {item.num}
-                  </span>
-                  <span className="block font-display text-sm leading-snug">
-                    {item.label[lang]}
-                  </span>
-                </span>
+                {dot}
+                {content}
               </button>
             );
           })}
