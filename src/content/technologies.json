@@ -1,0 +1,28 @@
+{
+  "intro": "La chaîne d'outils utilisée pour passer de la donnée géospatiale brute à une plateforme WebGIS fonctionnelle.",
+  "groups": [
+    { "label": "SIG & Géomatique", "items": [
+      { "name": "QGIS", "note": "traitement, symbologie, mise en page", "status": "actif" },
+      { "name": "SQL", "note": "requêtes spatiales et attributaires", "status": "actif" },
+      { "name": "Google Earth Engine", "note": "analyse par télédétection", "status": "actif" },
+      { "name": "Python", "note": "géotraitement, automatisation", "status": "actif" }
+    ]},
+    { "label": "WebGIS", "items": [
+      { "name": "Leaflet", "note": "cartographie interactive web", "status": "dev" },
+      { "name": "GeoServer", "note": "diffusion de couches SIG", "status": "dev" },
+      { "name": "PostGIS", "note": "base de données spatiale", "status": "dev" }
+    ]},
+    { "label": "Développement", "items": [
+      { "name": "React", "note": "interface frontend", "status": "actif" },
+      { "name": "Vite", "note": "environnement de build", "status": "actif" },
+      { "name": "JavaScript", "note": "logique applicative", "status": "actif" },
+      { "name": "Node.js", "note": "environnement serveur", "status": "actif" },
+      { "name": "Express.js", "note": "API backend", "status": "actif" },
+      { "name": "SQLite", "note": "base de données relationnelle", "status": "actif" },
+      { "name": "HTML / CSS", "note": "structure et mise en forme", "status": "actif" }
+    ]},
+    { "label": "Bureautique", "items": [
+      { "name": "Microsoft Office", "note": "Word, Excel, PowerPoint", "status": "actif" }
+    ]}
+  ]
+}

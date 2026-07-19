@@ -1,11 +1,30 @@
 import { PageShell } from "../components/PageShell";
-import { techGroups } from "../data/profile";
 import { useLang } from "../context/LangContext";
+import techContentFr from "../content/technologies.json";
+
+const groupLabelDe = { "SIG & Géomatique": "GIS & Geomatik", "WebGIS": "WebGIS", "Développement": "Entwicklung", "Bureautique": "Bürosoftware" };
+const noteDe = {
+  "traitement, symbologie, mise en page": "Verarbeitung, Symbolik, Layout",
+  "requêtes spatiales et attributaires": "räumliche und attributive Abfragen",
+  "analyse par télédétection": "Fernerkundungsanalyse",
+  "géotraitement, automatisation": "Geoverarbeitung, Automatisierung",
+  "cartographie interactive web": "interaktive Webkartografie",
+  "diffusion de couches SIG": "Bereitstellung von GIS-Layern",
+  "base de données spatiale": "räumliche Datenbank",
+  "interface frontend": "Frontend-Oberfläche",
+  "environnement de build": "Build-Umgebung",
+  "logique applicative": "Anwendungslogik",
+  "environnement serveur": "Serverumgebung",
+  "API backend": "Backend-API",
+  "base de données relationnelle": "relationale Datenbank",
+  "structure et mise en forme": "Struktur und Gestaltung",
+  "Word, Excel, PowerPoint": "Word, Excel, PowerPoint",
+};
 
 const copy = {
   fr: {
     eyebrow: "Couche 04 — Technologies", title: "Technologies",
-    intro: "La chaîne d'outils utilisée pour passer de la donnée géospatiale brute à une plateforme WebGIS fonctionnelle.",
+    intro: techContentFr.intro,
     skills: ["Stack technique", "SIG appliqué", "Développement full-stack"],
     next: "Architecture", dev: "en développement",
   },
@@ -30,10 +49,10 @@ export default function Technologies({ onSelect }) {
       onNext={() => onSelect("architecture")}
     >
       <div className="space-y-10">
-        {techGroups.map((group) => (
-          <div key={group.id}>
+        {techContentFr.groups.map((group) => (
+          <div key={group.label}>
             <h3 className="font-mono text-xs tracking-widest uppercase text-teal mb-3">
-              {group.label[lang]}
+              {lang === "fr" ? group.label : (groupLabelDe[group.label] || group.label)}
             </h3>
             <div className="grid sm:grid-cols-2 gap-3">
               {group.items.map((item) => (
@@ -52,7 +71,7 @@ export default function Technologies({ onSelect }) {
                       )}
                     </div>
                     <div className="text-xs text-inkfade mt-0.5">
-                      {item.note[lang]}
+                      {lang === "fr" ? item.note : (noteDe[item.note] || item.note)}
                     </div>
                   </div>
                 </div>

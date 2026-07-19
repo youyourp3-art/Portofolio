@@ -3,27 +3,7 @@ import { useLang } from "../context/LangContext";
 import homeContent from "../content/home.json";
 
 const copy = {
-  fr: {
-    tagline1: homeContent.tagline1,
-    tagline2: homeContent.tagline2,
-    tagline3: homeContent.tagline3,
-    intro: homeContent.intro,
-    cta1: "Voir le portfolio QGIS",
-    cta2: "Découvrir le WebGIS",
-    stats: [
-      { value: "9", label: "Domaines de compétence" },
-      { value: "15+", label: "Technologies maîtrisées" },
-      { value: "1", label: "Plateforme WebGIS en développement" },
-      { value: "3", label: "Diagnostics territoriaux menés" },
-    ],
-    explore: "Explorer les couches",
-    cards: [
-      { id: "competences", t: "Compétences", d: "SIG, développement, aménagement — par domaine." },
-      { id: "webgis", t: "WebGIS", d: "Le système que je développe pour la gestion territoriale." },
-      { id: "etude-cas", t: "Étude de cas", d: "Diagnostic territorial complet — Aïn Bénian." },
-      { id: "contact", t: "Contact", d: "CV, lettre de motivation, coordonnées." },
-    ],
-  },
+  fr: homeContent,
   de: {
     tagline1: "Das Territorium lesen,",
     tagline2: "die Werkzeuge bauen,",

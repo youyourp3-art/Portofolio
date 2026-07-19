@@ -8,7 +8,7 @@ import { Mail, Phone, Link as LinkedinIcon } from "lucide-react";
 const copy = {
   fr: {
     eyebrow: "Couche 11 — Contact", title: "Contact",
-    intro: "Coordonnées, CV et portfolio téléchargeables.",
+    intro: contactContent.intro,
     bio: contactContent.bio,
     photo: "Photo de profil",
     cv: "CV (PDF) — à ajouter",

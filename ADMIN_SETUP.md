@@ -47,13 +47,12 @@ s'inscrire, et ce mot de passe n'apparaît jamais dans le code.
 
 1. Va sur `https://<ton-site>.netlify.app/admin`
 2. Connecte-toi avec l'email/mot de passe de l'étape 2.
-3. Cinq sections dans le menu de gauche :
-   - **Pages du site** → Accueil / À propos / Contact — textes généraux.
-   - **Médiathèque** → photo, CV (PDF), lettres (PDF), captures QGIS et WebGIS.
-   - **Diagnostic Aïn Bénian** → les 7 sous-pages du diagnostic (Accueil,
-     Démographie, Cartographie, Équipements, AFOM, Stratégie, Dashboard) —
-     chiffres, tableaux, listes AFOM, projets phares, cartes de l'atlas.
-     Tout est éditable, y compris les images de l'atlas cartographique.
+3. Menu de gauche : **Pages du site** (les 11 onglets 01-11, texte complet
+   de chacun), **Médiathèque** (photo, CV, lettres, captures QGIS/WebGIS/
+   Démonstration), **Diagnostic Aïn Bénian** (les 7 sous-pages du diagnostic).
+   Tout le contenu français du site est désormais éditable depuis ici,
+   y compris les statistiques, les listes de compétences/technologies,
+   les couches d'architecture, les projets QGIS et les modules admin.
 4. Chaque **Publish** fait un commit sur ton repo GitHub → Netlify
    redéploie automatiquement → le changement est visible sur le site
    en 30 secondes à 1 minute (pas besoin de recharger manuellement,

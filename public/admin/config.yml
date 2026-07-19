@@ -14,26 +14,142 @@ collections:
     label: "Pages du site"
     files:
       - name: "home"
-        label: "Accueil"
+        label: "01 — Accueil"
         file: "src/content/home.json"
         fields:
           - { label: "Titre — ligne 1", name: "tagline1", widget: "string" }
           - { label: "Titre — ligne 2", name: "tagline2", widget: "string" }
           - { label: "Titre — ligne 3", name: "tagline3", widget: "string" }
           - { label: "Texte d'introduction", name: "intro", widget: "text" }
+          - { label: "Bouton 1", name: "cta1", widget: "string" }
+          - { label: "Bouton 2", name: "cta2", widget: "string" }
+          - label: "Statistiques clés"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Valeur", name: "value", widget: "string" }
+              - { label: "Libellé", name: "label", widget: "string" }
+          - { label: "Titre section liens", name: "explore", widget: "string" }
+          - label: "Cartes de navigation"
+            name: "cards"
+            widget: "list"
+            fields:
+              - { label: "Identifiant (ne pas changer)", name: "id", widget: "string" }
+              - { label: "Titre", name: "t", widget: "string" }
+              - { label: "Description", name: "d", widget: "string" }
 
       - name: "about"
-        label: "À propos"
+        label: "02 — À propos"
         file: "src/content/about.json"
         fields:
+          - { label: "Introduction", name: "intro", widget: "text" }
           - { label: "Parcours", name: "p1", widget: "text" }
+          - { label: "Formation 1 — période", name: "f1y", widget: "string" }
+          - { label: "Formation 1 — texte", name: "f1", widget: "text" }
+          - { label: "Formation 2 — période", name: "f2y", widget: "string" }
+          - { label: "Formation 2 — texte", name: "f2", widget: "text" }
           - { label: "Pourquoi la géomatique", name: "p3", widget: "text" }
           - { label: "Ce que je cherche", name: "p4", widget: "text" }
 
+      - name: "competences"
+        label: "03 — Compétences"
+        file: "src/content/skills.json"
+        fields:
+          - { label: "Introduction", name: "intro", widget: "text" }
+          - label: "Domaines"
+            name: "domains"
+            widget: "list"
+            fields:
+              - { label: "Nom du domaine", name: "label", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+              - { label: "Outils associés", name: "tools", widget: "list" }
+
+      - name: "technologies"
+        label: "04 — Technologies"
+        file: "src/content/technologies.json"
+        fields:
+          - { label: "Introduction", name: "intro", widget: "text" }
+          - label: "Groupes de technologies"
+            name: "groups"
+            widget: "list"
+            fields:
+              - { label: "Nom du groupe", name: "label", widget: "string" }
+              - label: "Technologies"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Nom", name: "name", widget: "string" }
+                  - { label: "Description courte", name: "note", widget: "string" }
+                  - { label: "Statut", name: "status", widget: "select", options: ["actif", "dev"] }
+
+      - name: "architecture"
+        label: "05 — Architecture"
+        file: "src/content/architecture.json"
+        fields:
+          - { label: "Introduction", name: "intro", widget: "text" }
+          - label: "Couches système"
+            name: "layers"
+            widget: "list"
+            fields:
+              - { label: "Nom", name: "label", widget: "string" }
+              - { label: "Détail", name: "detail", widget: "text" }
+          - { label: "Titre — Sécurité", name: "securityTitle", widget: "string" }
+          - { label: "Texte — Sécurité", name: "securityText", widget: "text" }
+
+      - name: "qgis"
+        label: "06 — Portfolio QGIS"
+        file: "src/content/qgis.json"
+        fields:
+          - { label: "Introduction", name: "intro", widget: "text" }
+          - label: "Projets"
+            name: "projects"
+            widget: "list"
+            fields:
+              - { label: "Étiquette (ex. PROJET 01)", name: "tag", widget: "string" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+              - { label: "Clé média (ne pas changer)", name: "mediaKey", widget: "string" }
+          - { label: "Note d'ajout", name: "addNote", widget: "string" }
+
+      - name: "webgis"
+        label: "07 — WebGIS"
+        file: "src/content/webgis.json"
+        fields:
+          - { label: "Introduction", name: "intro", widget: "text" }
+          - { label: "Titre section", name: "sectionTitle", widget: "string" }
+          - { label: "Texte section", name: "sectionText", widget: "text" }
+          - { label: "Titre fonctionnalités", name: "featuresTitle", widget: "string" }
+          - { label: "Fonctionnalités", name: "features", widget: "list" }
+
+      - name: "demo"
+        label: "08 — Démonstration"
+        file: "src/content/demo.json"
+        fields:
+          - { label: "Introduction", name: "intro", widget: "text" }
+          - label: "Étapes"
+            name: "flows"
+            widget: "list"
+            fields:
+              - { label: "Nom de l'étape", name: "label", widget: "string" }
+              - { label: "Capture / GIF", name: "image", widget: "image", required: false }
+
+      - name: "admin_page"
+        label: "10 — Administration"
+        file: "src/content/admin.json"
+        fields:
+          - { label: "Introduction", name: "intro", widget: "text" }
+          - label: "Modules"
+            name: "modules"
+            widget: "list"
+            fields:
+              - { label: "Titre du module", name: "title", widget: "string" }
+              - { label: "Éléments gérés", name: "items", widget: "list" }
+
       - name: "contact"
-        label: "Contact"
+        label: "11 — Contact"
         file: "src/content/contact.json"
         fields:
+          - { label: "Introduction", name: "intro", widget: "text" }
           - { label: "Bio courte", name: "bio", widget: "text" }
 
   - name: "media"

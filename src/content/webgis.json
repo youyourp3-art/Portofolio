@@ -1,0 +1,12 @@
+{
+  "intro": "Un système que je développe pour gérer et visualiser des données territoriales en ligne — pensé comme un outil, pas comme un simple export de diagnostic.",
+  "sectionTitle": "Présentation",
+  "sectionText": "La plateforme réunit une base de données relationnelle, une interface d'administration sécurisée et un module de gestion des données territoriales. Elle a été conçue pour rendre un diagnostic territorial consultable et actualisable, plutôt que figé dans un rapport. Le module cartographique interactif (Leaflet / GeoServer / PostGIS) est en cours de développement séparé.",
+  "featuresTitle": "Fonctionnalités",
+  "features": [
+    "Consultation des données territoriales via l'interface publique",
+    "Gestion des sections et des attributs par module d'administration",
+    "Authentification et séparation espace public / espace de gestion",
+    "Visualisation de statistiques et indicateurs territoriaux"
+  ]
+}

@@ -1,22 +1,18 @@
-import { PageShell, Placeholder } from "../components/PageShell";
+import { PageShell } from "../components/PageShell";
 import { MediaImage } from "../components/Media";
 import { useLang } from "../context/LangContext";
+import webgisFr from "../content/webgis.json";
 
 const copy = {
   fr: {
     eyebrow: "Couche 07 — WebGIS", title: "Plateforme WebGIS",
-    intro: "Un système que je développe pour gérer et visualiser des données territoriales en ligne — pensé comme un outil, pas comme un simple export de diagnostic.",
+    intro: webgisFr.intro,
     skills: ["React", "Node.js", "SQLite", "API REST"],
     next: "Démonstration",
-    h1: "Présentation",
-    p1: "La plateforme réunit une base de données relationnelle, une interface d'administration sécurisée et un module de gestion des données territoriales. Elle a été conçue pour rendre un diagnostic territorial consultable et actualisable, plutôt que figé dans un rapport. Le module cartographique interactif (Leaflet / GeoServer / PostGIS) est en cours de développement séparé.",
-    h2: "Fonctionnalités",
-    features: [
-      "Consultation des données territoriales via l'interface publique",
-      "Gestion des sections et des attributs par module d'administration",
-      "Authentification et séparation espace public / espace de gestion",
-      "Visualisation de statistiques et indicateurs territoriaux",
-    ],
+    h1: webgisFr.sectionTitle,
+    p1: webgisFr.sectionText,
+    h2: webgisFr.featuresTitle,
+    features: webgisFr.features,
     ph: "Emplacement réservé — captures de l'interface publique et du tableau de bord",
   },
   de: {
