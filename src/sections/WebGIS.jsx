@@ -1,8 +1,8 @@
 import { PageShell } from "../components/PageShell";
-import { MediaImage } from "../components/Media";
 import { useLang } from "../context/LangContext";
 import webgisFr from "../content/webgis.json";
 import { Attachments } from "../components/Attachments";
+import WebGISMap from "../components/WebGISMap";
 
 const copy = {
   fr: {
@@ -15,6 +15,8 @@ const copy = {
     h2: webgisFr.featuresTitle,
     features: webgisFr.features,
     ph: "Emplacement réservé — captures de l'interface publique et du tableau de bord",
+    mapTitle: "Démonstration cartographique interactive",
+    mapText: "Carte Leaflet développée à partir de couches SIG produites sous QGIS (analyse réseau, isochrones, équipements, transport) sur le secteur de Bab Ezzouar. Clique sur une entité pour voir ses attributs.",
   },
   de: {
     eyebrow: "Layer 07 — WebGIS", title: "WebGIS-Plattform",
@@ -22,7 +24,7 @@ const copy = {
     skills: ["React", "Node.js", "SQLite", "REST-API"],
     next: "Fallstudie — Aïn Bénian",
     h1: "Übersicht",
-    p1: "Die Plattform vereint eine relationale Datenbank, eine gesicherte Administrationsoberfläche und ein Modul zur Verwaltung territorialer Daten. Sie wurde konzipiert, um eine territoriale Diagnostik abrufbar und aktualisierbar zu machen, statt sie in einem starren Bericht zu belassen. Das interaktive Kartenmodul (Leaflet / GeoServer / PostGIS) befindet sich in separater Entwicklung.",
+    p1: "Die Plattform vereint eine relationale Datenbank, eine gesicherte Administrationsoberfläche und ein Modul zur Verwaltung territorialer Daten. Sie wurde konzipiert, um eine territoriale Diagnostik abrufbar und aktualisierbar zu machen, statt sie in einem starren Bericht zu belassen. Das interaktive Kartenmodul unten (Leaflet, auf Basis von in QGIS erstellten Layern) ist eine erste Demonstration davon.",
     h2: "Funktionen",
     features: [
       "Abruf territorialer Daten über die öffentliche Oberfläche",
@@ -31,6 +33,8 @@ const copy = {
       "Visualisierung von Statistiken und territorialen Indikatoren",
     ],
     ph: "Platzhalter — Screenshots der öffentlichen Oberfläche und des Dashboards",
+    mapTitle: "Interaktive Kartendemonstration",
+    mapText: "Leaflet-Karte auf Basis von in QGIS erstellten GIS-Layern (Netzwerkanalyse, Isochronen, Einrichtungen, Verkehr) für das Gebiet Bab Ezzouar. Klicke auf ein Objekt, um seine Attribute zu sehen.",
   },
 };
 
@@ -54,7 +58,11 @@ export default function WebGIS({ onSelect }) {
           ))}
         </ul>
       </section>
-      <MediaImage mediaKey="webgisScreen" alt="Interface WebGIS" fallback={c.ph} />
+      <section>
+        <h2 className="font-display text-xl text-ink mb-3">{c.mapTitle}</h2>
+        <p className="text-inkfade leading-relaxed mb-4 text-sm">{c.mapText}</p>
+        <WebGISMap lang={lang} />
+      </section>
       <Attachments items={webgisFr.attachments} title="Documents et captures complémentaires" />
     </PageShell>
   );
