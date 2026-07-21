@@ -19,6 +19,10 @@
     {
       "file": "/uploads/eferger1.png",
       "label": "Erstellung einer netzwerkbasierten GIS-Analyse zur Bewertung der fußläufigen Erreichbarkeit von Straßenbahnhaltestellen. Die Karte visualisiert Gehzeiten (0–5, 5–10 und 10–15 Minuten) und dient der Analyse der Zugänglichkeit sowie der Unterstützung stadtplanerischer Entscheidungen."
+    },
+    {
+      "label": "Eigenständig erstellte GIS-Kartierung der Flächennutzung der Gemeinde Aïn Benian. Das Projekt umfasst die Digitalisierung, räumliche Analyse und Visualisierung der bestehenden Nutzungsstrukturen als Entscheidungsgrundlage für Stadtplanung, Raumordnung und nachhaltige Stadtentwicklung.",
+      "file": "/uploads/image25.png"
     }
   ]
 }
