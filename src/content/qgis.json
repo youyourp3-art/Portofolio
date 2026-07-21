@@ -27,6 +27,10 @@
     {
       "label": "Erstellung einer GIS-gestützten Isochronenkarte zur Analyse der fußläufigen Erreichbarkeit von Bushaltestellen in der Gemeinde Aïn Benian. Die Karte visualisiert Einzugsbereiche im Umkreis von 400 Metern entlang des Straßennetzes und dient der Bewertung der Erreichbarkeit des öffentlichen Personennahverkehrs sowie der Identifizierung potenziell unterversorgter Gebiete.",
       "file": "/uploads/image27.png"
+    },
+    {
+      "file": "/uploads/image_2026-07-21_021738915.png",
+      "label": "Screenshot der QGIS-Arbeitsumgebung während der eigenständigen Erstellung der Karten. Das Projekt umfasst die Datenaufbereitung, Digitalisierung, Layerverwaltung, Symbolisierung sowie die kartografische Gestaltung der Analysen für die Gemeinde Aïn Benian."
     }
   ]
 }
