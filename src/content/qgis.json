@@ -31,6 +31,10 @@
     {
       "file": "/uploads/image_2026-07-21_021738915.png",
       "label": "Screenshot der QGIS-Arbeitsumgebung während der eigenständigen Erstellung der Karten. Das Projekt umfasst die Datenaufbereitung, Digitalisierung, Layerverwaltung, Symbolisierung sowie die kartografische Gestaltung der Analysen für die Gemeinde Aïn Benian."
+    },
+    {
+      "file": "/uploads/eferger12.png",
+      "label": "Diese GIS-gestützte Karte analysiert die multimodale Erreichbarkeit der Gemeinde Bab Ezzouar anhand einer netzwerkbasierten Isochronenanalyse. Berücksichtigt wurden Straßenbahnhaltestellen sowie die im Bau befindlichen Metrostationen. Die farbigen Isochronen stellen fußläufige Erreichbarkeitszeiten von 0 bis 15 Minuten dar und verdeutlichen die räumliche Verteilung der Erreichbarkeit. Darüber hinaus wurden Buslinien, Hauptfußgängerströme und verkehrliche Engpässe in die Analyse integriert, um Bereiche mit eingeschränkter Erreichbarkeit sowie kritische Knotenpunkte im Verkehrsnetz zu identifizieren. Die Karte kombiniert mehrere räumliche Datensätze in einer integrierten Mobilitätsanalyse und dient als Entscheidungsgrundlage für die Stadt- und Verkehrsplanung."
     }
   ]
 }
