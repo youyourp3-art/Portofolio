@@ -23,6 +23,10 @@
     {
       "label": "Eigenständig erstellte GIS-Kartierung der Flächennutzung der Gemeinde Aïn Benian. Das Projekt umfasst die Digitalisierung, räumliche Analyse und Visualisierung der bestehenden Nutzungsstrukturen als Entscheidungsgrundlage für Stadtplanung, Raumordnung und nachhaltige Stadtentwicklung.",
       "file": "/uploads/image25.png"
+    },
+    {
+      "label": "Erstellung einer GIS-gestützten Isochronenkarte zur Analyse der fußläufigen Erreichbarkeit von Bushaltestellen in der Gemeinde Aïn Benian. Die Karte visualisiert Einzugsbereiche im Umkreis von 400 Metern entlang des Straßennetzes und dient der Bewertung der Erreichbarkeit des öffentlichen Personennahverkehrs sowie der Identifizierung potenziell unterversorgter Gebiete.",
+      "file": "/uploads/image27.png"
     }
   ]
 }
