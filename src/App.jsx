@@ -9,7 +9,6 @@ import Technologies from "./sections/Technologies";
 import Architecture from "./sections/Architecture";
 import PortfolioQGIS from "./sections/PortfolioQGIS";
 import WebGIS from "./sections/WebGIS";
-import Demo from "./sections/Demo";
 import CaseStudy from "./sections/CaseStudy";
 import Admin from "./sections/Admin";
 import Contact from "./sections/Contact";
@@ -22,7 +21,6 @@ const sections = {
   architecture: Architecture,
   qgis: PortfolioQGIS,
   webgis: WebGIS,
-  demo: Demo,
   "etude-cas": CaseStudy,
   admin: Admin,
   contact: Contact,

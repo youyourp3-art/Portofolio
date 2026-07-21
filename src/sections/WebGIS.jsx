@@ -9,7 +9,7 @@ const copy = {
     eyebrow: "Couche 07 — WebGIS", title: "Plateforme WebGIS",
     intro: webgisFr.intro,
     skills: ["React", "Node.js", "SQLite", "API REST"],
-    next: "Démonstration",
+    next: "Étude de cas — Aïn Bénian",
     h1: webgisFr.sectionTitle,
     p1: webgisFr.sectionText,
     h2: webgisFr.featuresTitle,
@@ -20,7 +20,7 @@ const copy = {
     eyebrow: "Layer 07 — WebGIS", title: "WebGIS-Plattform",
     intro: "Ein System, das ich entwickle, um territoriale Daten online zu verwalten und zu visualisieren — als Werkzeug gedacht, nicht als bloßer Diagnostik-Export.",
     skills: ["React", "Node.js", "SQLite", "REST-API"],
-    next: "Demonstration",
+    next: "Fallstudie — Aïn Bénian",
     h1: "Übersicht",
     p1: "Die Plattform vereint eine relationale Datenbank, eine gesicherte Administrationsoberfläche und ein Modul zur Verwaltung territorialer Daten. Sie wurde konzipiert, um eine territoriale Diagnostik abrufbar und aktualisierbar zu machen, statt sie in einem starren Bericht zu belassen. Das interaktive Kartenmodul (Leaflet / GeoServer / PostGIS) befindet sich in separater Entwicklung.",
     h2: "Funktionen",
@@ -38,7 +38,7 @@ export default function WebGIS({ onSelect }) {
   const { lang } = useLang();
   const c = copy[lang];
   return (
-    <PageShell eyebrow={c.eyebrow} title={c.title} intro={c.intro} skills={c.skills} next={c.next} onNext={() => onSelect("demo")}>
+    <PageShell eyebrow={c.eyebrow} title={c.title} intro={c.intro} skills={c.skills} next={c.next} onNext={() => onSelect("etude-cas")}>
       <section>
         <h2 className="font-display text-xl text-ink mb-3">{c.h1}</h2>
         <p className="text-inkfade leading-relaxed">{c.p1}</p>
