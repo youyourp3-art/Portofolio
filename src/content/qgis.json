@@ -15,5 +15,10 @@
     }
   ],
   "addNote": "+ Ajouter un projet — fiche : contexte / objectif / données / traitement / résultat",
-  "attachments": []
+  "attachments": [
+    {
+      "file": "/uploads/eferger1.png",
+      "label": "Erstellung einer netzwerkbasierten GIS-Analyse zur Bewertung der fußläufigen Erreichbarkeit von Straßenbahnhaltestellen. Die Karte visualisiert Gehzeiten (0–5, 5–10 und 10–15 Minuten) und dient der Analyse der Zugänglichkeit sowie der Unterstützung stadtplanerischer Entscheidungen."
+    }
+  ]
 }
