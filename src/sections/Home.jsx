@@ -1,5 +1,6 @@
 import { profile } from "../data/profile";
 import { useLang } from "../context/LangContext";
+import { Attachments } from "../components/Attachments";
 import homeContent from "../content/home.json";
 
 const copy = {
@@ -96,6 +97,12 @@ export default function Home({ onSelect }) {
           ))}
         </div>
       </div>
+
+      {lang === "fr" && (
+        <div className="max-w-4xl mx-auto px-6 md:px-10 pb-14">
+          <Attachments items={homeContent.attachments} title="Documents et captures complémentaires" />
+        </div>
+      )}
     </div>
   );
 }

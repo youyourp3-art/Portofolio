@@ -1,8 +1,19 @@
 {
   "intro": "Mes réalisations cartographiques personnelles — chaque fiche détaille le contexte, les données et le traitement effectué sous QGIS.",
   "projects": [
-    { "tag": "PROJET 01", "title": "Diagnostic territorial — Djelfa", "desc": "Relevé de terrain, analyse socio-économique et spatiale, formulation de recommandations d'aménagement.", "mediaKey": "qgisDjelfa" },
-    { "tag": "PROJET 02", "title": "Étude de terrain — Sétif", "desc": "Analyse du réseau viaire et des espaces publics, évaluation de la conformité aux règlements d'urbanisme.", "mediaKey": "qgisSetif" }
+    {
+      "tag": "PROJET 01",
+      "title": "Diagnostic territorial — Djelfa",
+      "desc": "Relevé de terrain, analyse socio-économique et spatiale, formulation de recommandations d'aménagement.",
+      "mediaKey": "qgisDjelfa"
+    },
+    {
+      "tag": "PROJET 02",
+      "title": "Étude de terrain — Sétif",
+      "desc": "Analyse du réseau viaire et des espaces publics, évaluation de la conformité aux règlements d'urbanisme.",
+      "mediaKey": "qgisSetif"
+    }
   ],
-  "addNote": "+ Ajouter un projet — fiche : contexte / objectif / données / traitement / résultat"
+  "addNote": "+ Ajouter un projet — fiche : contexte / objectif / données / traitement / résultat",
+  "attachments": []
 }

@@ -1,5 +1,6 @@
 import { SubSection } from "./ui";
 import data from "../../content/case-study/cartographie.json";
+import { Attachments } from "../../components/Attachments";
 
 export default function Cartographie() {
   return (
@@ -28,6 +29,7 @@ export default function Cartographie() {
       </SubSection>
 
       <p className="text-xs text-inkfade font-mono">{data.note}</p>
+      <Attachments items={data.attachments} title="Documents et captures complémentaires" />
     </div>
   );
 }

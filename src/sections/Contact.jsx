@@ -4,6 +4,7 @@ import { useLang } from "../context/LangContext";
 import { MediaImage, MediaFile } from "../components/Media";
 import contactContent from "../content/contact.json";
 import { Mail, Phone, Link as LinkedinIcon } from "lucide-react";
+import { Attachments } from "../components/Attachments";
 
 const copy = {
   fr: {
@@ -81,6 +82,7 @@ export default function Contact() {
           <MediaFile mediaKey="lettreTrierPdf" label="Anschreiben (PDF)" fallback="Anschreiben (PDF) — nachreichen" />
         </div>
       </div>
+      <Attachments items={contactContent.attachments} title="Documents et captures complémentaires" />
     </PageShell>
   );
 }

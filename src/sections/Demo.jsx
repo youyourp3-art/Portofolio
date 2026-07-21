@@ -1,4 +1,5 @@
 import { PageShell, Placeholder } from "../components/PageShell";
+import { Attachments } from "../components/Attachments";
 import { useLang } from "../context/LangContext";
 import demoFr from "../content/demo.json";
 
@@ -41,6 +42,7 @@ export default function Demo({ onSelect }) {
           </div>
         ))}
       </div>
+      <Attachments items={demoFr.attachments} title="Documents et captures complémentaires" />
     </PageShell>
   );
 }

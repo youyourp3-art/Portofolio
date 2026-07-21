@@ -1,19 +1,48 @@
 {
-  "tags": ["Master 1 Aménagement Urbain", "USTHB 2024-2025", "Groupe 2"],
+  "tags": [
+    "Master 1 Aménagement Urbain",
+    "USTHB 2024-2025",
+    "Groupe 2"
+  ],
   "titre": "Diagnostic socio-démographique et territorial — Commune d'Aïn Bénian",
   "intro": "Analyse approfondie pour un projet d'aménagement urbain durable face à une croissance démographique explosive (+170 % d'ici 2040) sur un territoire déjà saturé (97,2 % urbanisé).",
   "stats": [
-    { "value": "261 229", "label": "Population CA Chéraga" },
-    { "value": "+170 %", "label": "Croissance 2020–2040" },
-    { "value": "30 019", "label": "Logements nécessaires" },
-    { "value": "40+", "label": "Équipements manquants" }
+    {
+      "value": "261 229",
+      "label": "Population CA Chéraga"
+    },
+    {
+      "value": "+170 %",
+      "label": "Croissance 2020–2040"
+    },
+    {
+      "value": "30 019",
+      "label": "Logements nécessaires"
+    },
+    {
+      "value": "40+",
+      "label": "Équipements manquants"
+    }
   ],
   "problematique": "Comment la commune d'Aïn Bénian, caractérisée par une saturation foncière quasi totale (97,2 % d'urbanisation) et une densité urbaine parmi les plus élevées de la wilaya (4 734 hab/km²), peut-elle absorber une croissance démographique explosive (+170 % d'ici 2040) tout en répondant à des besoins croissants et diversifiés (logements, équipements, services liés au vieillissement) et en préservant un cadre de vie qualitatif ?",
   "hypothese": "La commune d'Aïn Bénian, ayant atteint une phase de maturation démographique et territoriale où l'étalement urbain n'est plus une option viable, doit réorienter sa stratégie d'aménagement vers deux leviers complémentaires : le renouvellement urbain du tissu existant et une densification maîtrisée et qualitative.",
   "paradigmes": [
-    { "titre": "De l'extension à la transformation", "detail": "Restructuration du bâti existant plutôt qu'urbanisation de terrains vierges." },
-    { "titre": "De la quantité à la qualité", "detail": "Qualité urbaine (espaces publics, architecture) plutôt que simple production de m²." },
-    { "titre": "De la monospécialisation à la mixité", "detail": "Quartiers vivants : habitat, emploi, commerce, services, loisirs." },
-    { "titre": "De la voiture à la mobilité durable", "detail": "Organisation urbaine autour des transports en commun et de la mobilité douce." }
-  ]
+    {
+      "titre": "De l'extension à la transformation",
+      "detail": "Restructuration du bâti existant plutôt qu'urbanisation de terrains vierges."
+    },
+    {
+      "titre": "De la quantité à la qualité",
+      "detail": "Qualité urbaine (espaces publics, architecture) plutôt que simple production de m²."
+    },
+    {
+      "titre": "De la monospécialisation à la mixité",
+      "detail": "Quartiers vivants : habitat, emploi, commerce, services, loisirs."
+    },
+    {
+      "titre": "De la voiture à la mobilité durable",
+      "detail": "Organisation urbaine autour des transports en commun et de la mobilité douce."
+    }
+  ],
+  "attachments": []
 }

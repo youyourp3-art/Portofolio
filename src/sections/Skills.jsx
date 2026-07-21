@@ -1,6 +1,7 @@
 import { PageShell } from "../components/PageShell";
 import { useLang } from "../context/LangContext";
 import skillsContentFr from "../content/skills.json";
+import { Attachments } from "../components/Attachments";
 
 const domainsDe = [
   { label: "SIG", de: "GIS" }, // kept for label translation mapping below
@@ -76,6 +77,7 @@ export default function Skills({ onSelect }) {
           </div>
         ))}
       </div>
+      <Attachments items={skillsContentFr.attachments} title="Documents et captures complémentaires" />
     </PageShell>
   );
 }

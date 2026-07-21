@@ -1,5 +1,9 @@
+import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend } from "recharts";
 import { Stat, SubSection } from "./ui";
+import { Attachments } from "../../components/Attachments";
 import data from "../../content/case-study/strategie.json";
+
+const COLORS = ["#C1451D", "#25554A", "#16332B", "#B9C2AF", "#3E4A44"];
 
 export default function Strategie() {
   return (
@@ -28,16 +32,27 @@ export default function Strategie() {
       </SubSection>
 
       <SubSection title="Répartition budgétaire par axe">
-        <div className="border border-line bg-paper2 divide-y divide-line">
-          {data.budgetAxes.map((b) => (
-            <div key={b.axe} className="flex items-center gap-4 p-3">
-              <span className="text-sm text-ink w-48 shrink-0">{b.axe}</span>
-              <div className="flex-1 h-2 bg-paper">
-                <div className="h-full bg-teal" style={{ width: `${b.pourcentage}%` }} />
-              </div>
-              <span className="font-mono text-xs text-inkfade w-12 text-right">{b.pourcentage}%</span>
-            </div>
-          ))}
+        <div className="border border-line bg-paper2 p-4 h-72">
+          <ResponsiveContainer width="100%" height="100%">
+            <PieChart>
+              <Pie
+                data={data.budgetAxes}
+                dataKey="pourcentage"
+                nameKey="axe"
+                cx="50%"
+                cy="50%"
+                outerRadius={90}
+                label={({ axe, pourcentage }) => `${axe} ${pourcentage}%`}
+                labelLine={false}
+              >
+                {data.budgetAxes.map((_, i) => (
+                  <Cell key={i} fill={COLORS[i % COLORS.length]} />
+                ))}
+              </Pie>
+              <Tooltip contentStyle={{ background: "#F7F6EF", border: "1px solid #B9C2AF", fontSize: 12 }} />
+              <Legend wrapperStyle={{ fontSize: 11 }} />
+            </PieChart>
+          </ResponsiveContainer>
         </div>
       </SubSection>
 
@@ -58,6 +73,8 @@ export default function Strategie() {
           <Stat key={s.label} value={s.value} label={s.label} />
         ))}
       </div>
+
+      <Attachments items={data.attachments} title="Documents et captures complémentaires" />
     </div>
   );
 }

@@ -1,9 +1,22 @@
 {
   "intro": "L'ensemble des données de ce diagnostic (démographie, cartes, équipements, stratégie) est géré depuis le panel admin unique de ce portfolio — plus de dashboard séparé à maintenir.",
   "modules": [
-    { "nom": "Démographie", "desc": "Édition des séries 2020–2040 (population, densité, taux de croissance)." },
-    { "nom": "Cartographie", "desc": "Ajout et classement des cartes de l'atlas par catégorie." },
-    { "nom": "Équipements", "desc": "Gestion de l'inventaire par catégorie (existant / besoin estimé)." },
-    { "nom": "AFOM & Stratégie", "desc": "Édition des atouts/faiblesses/opportunités/menaces et des projets phares." }
-  ]
+    {
+      "nom": "Démographie",
+      "desc": "Édition des séries 2020–2040 (population, densité, taux de croissance)."
+    },
+    {
+      "nom": "Cartographie",
+      "desc": "Ajout et classement des cartes de l'atlas par catégorie."
+    },
+    {
+      "nom": "Équipements",
+      "desc": "Gestion de l'inventaire par catégorie (existant / besoin estimé)."
+    },
+    {
+      "nom": "AFOM & Stratégie",
+      "desc": "Édition des atouts/faiblesses/opportunités/menaces et des projets phares."
+    }
+  ],
+  "attachments": []
 }

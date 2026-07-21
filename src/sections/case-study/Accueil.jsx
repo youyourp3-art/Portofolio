@@ -1,5 +1,6 @@
 import { Stat, SubSection } from "./ui";
 import data from "../../content/case-study/accueil.json";
+import { Attachments } from "../../components/Attachments";
 
 export default function Accueil() {
   return (
@@ -44,6 +45,7 @@ export default function Accueil() {
           ))}
         </div>
       </SubSection>
+      <Attachments items={data.attachments} title="Documents et captures complémentaires" />
     </div>
   );
 }

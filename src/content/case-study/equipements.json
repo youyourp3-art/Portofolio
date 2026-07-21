@@ -1,44 +1,166 @@
 {
   "intro": "Inventaire complet des équipements publics et analyse des besoins, établi à partir des données du diagnostic (PDF source du groupe).",
   "groupes": [
-    { "cat": "Éducatif", "items": [
-      { "nom": "Crèches", "existant": 4, "besoin": 3 },
-      { "nom": "Écoles primaires", "existant": 26, "besoin": 6 },
-      { "nom": "CEM", "existant": 7, "besoin": 4 },
-      { "nom": "Lycées", "existant": 3, "besoin": 3 },
-      { "nom": "ENS / CFPA", "existant": 2, "besoin": 2 }
-    ]},
-    { "cat": "Sport & loisirs", "items": [
-      { "nom": "Stades", "existant": 11, "besoin": 2 },
-      { "nom": "Complexes sportifs", "existant": 1, "besoin": 3 },
-      { "nom": "Promenades", "existant": 5, "besoin": 2 },
-      { "nom": "Espaces publics", "existant": 3, "besoin": 7 },
-      { "nom": "Maisons de jeunes", "existant": 3, "besoin": 3 }
-    ]},
-    { "cat": "Sanitaire", "items": [
-      { "nom": "Polycliniques", "existant": 1, "besoin": 2 },
-      { "nom": "Dispensaires", "existant": 4, "besoin": 3 },
-      { "nom": "Hôpital projeté", "existant": 1, "besoin": 1 }
-    ]},
-    { "cat": "Administratif", "items": [
-      { "nom": "Siège APC", "existant": 1, "besoin": 0 },
-      { "nom": "Annexes APC", "existant": 3, "besoin": 2 },
-      { "nom": "Postes", "existant": 5, "besoin": 2 },
-      { "nom": "Assurances", "existant": 2, "besoin": 0 },
-      { "nom": "CNAS", "existant": 1, "besoin": 1 },
-      { "nom": "Centre biométrique", "existant": 1, "besoin": 0 }
-    ]},
-    { "cat": "Industriel", "items": [
-      { "nom": "Zone d'activité", "existant": 1, "besoin": 1 },
-      { "nom": "Usine", "existant": 1, "besoin": 0 },
-      { "nom": "Abattoir", "existant": 1, "besoin": 0 }
-    ]},
-    { "cat": "Cultuel", "items": [
-      { "nom": "Mosquées", "existant": 16, "besoin": 5 },
-      { "nom": "Cimetières", "existant": 2, "besoin": 0 }
-    ]},
-    { "cat": "Touristique", "items": [
-      { "nom": "Hôtels", "existant": 11, "besoin": 5 }
-    ]}
-  ]
+    {
+      "cat": "Éducatif",
+      "items": [
+        {
+          "nom": "Crèches",
+          "existant": 4,
+          "besoin": 3
+        },
+        {
+          "nom": "Écoles primaires",
+          "existant": 26,
+          "besoin": 6
+        },
+        {
+          "nom": "CEM",
+          "existant": 7,
+          "besoin": 4
+        },
+        {
+          "nom": "Lycées",
+          "existant": 3,
+          "besoin": 3
+        },
+        {
+          "nom": "ENS / CFPA",
+          "existant": 2,
+          "besoin": 2
+        }
+      ]
+    },
+    {
+      "cat": "Sport & loisirs",
+      "items": [
+        {
+          "nom": "Stades",
+          "existant": 11,
+          "besoin": 2
+        },
+        {
+          "nom": "Complexes sportifs",
+          "existant": 1,
+          "besoin": 3
+        },
+        {
+          "nom": "Promenades",
+          "existant": 5,
+          "besoin": 2
+        },
+        {
+          "nom": "Espaces publics",
+          "existant": 3,
+          "besoin": 7
+        },
+        {
+          "nom": "Maisons de jeunes",
+          "existant": 3,
+          "besoin": 3
+        }
+      ]
+    },
+    {
+      "cat": "Sanitaire",
+      "items": [
+        {
+          "nom": "Polycliniques",
+          "existant": 1,
+          "besoin": 2
+        },
+        {
+          "nom": "Dispensaires",
+          "existant": 4,
+          "besoin": 3
+        },
+        {
+          "nom": "Hôpital projeté",
+          "existant": 1,
+          "besoin": 1
+        }
+      ]
+    },
+    {
+      "cat": "Administratif",
+      "items": [
+        {
+          "nom": "Siège APC",
+          "existant": 1,
+          "besoin": 0
+        },
+        {
+          "nom": "Annexes APC",
+          "existant": 3,
+          "besoin": 2
+        },
+        {
+          "nom": "Postes",
+          "existant": 5,
+          "besoin": 2
+        },
+        {
+          "nom": "Assurances",
+          "existant": 2,
+          "besoin": 0
+        },
+        {
+          "nom": "CNAS",
+          "existant": 1,
+          "besoin": 1
+        },
+        {
+          "nom": "Centre biométrique",
+          "existant": 1,
+          "besoin": 0
+        }
+      ]
+    },
+    {
+      "cat": "Industriel",
+      "items": [
+        {
+          "nom": "Zone d'activité",
+          "existant": 1,
+          "besoin": 1
+        },
+        {
+          "nom": "Usine",
+          "existant": 1,
+          "besoin": 0
+        },
+        {
+          "nom": "Abattoir",
+          "existant": 1,
+          "besoin": 0
+        }
+      ]
+    },
+    {
+      "cat": "Cultuel",
+      "items": [
+        {
+          "nom": "Mosquées",
+          "existant": 16,
+          "besoin": 5
+        },
+        {
+          "nom": "Cimetières",
+          "existant": 2,
+          "besoin": 0
+        }
+      ]
+    },
+    {
+      "cat": "Touristique",
+      "items": [
+        {
+          "nom": "Hôtels",
+          "existant": 11,
+          "besoin": 5
+        }
+      ]
+    }
+  ],
+  "attachments": []
 }

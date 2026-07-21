@@ -37,12 +37,31 @@
     "Risques naturels (glissement de terrain, séisme)"
   ],
   "axes": [
-    { "titre": "Renouvellement urbain", "desc": "Transformation des friches industrielles et valorisation des dents creuses." },
-    { "titre": "Mobilité durable", "desc": "Tramway, mobilité douce et contournement routier." },
-    { "titre": "Tourisme intégré", "desc": "Zone d'Expansion Touristique (ZET) et valorisation littorale." },
-    { "titre": "Agriculture urbaine", "desc": "Agriparcs et agriculture résiliente." },
-    { "titre": "Industrie innovante", "desc": "Extension de la zone d'activité et transition énergétique." },
-    { "titre": "Équipements structurants", "desc": "Programmation urbaine prioritaire (lycées, CEM, hôpital, sport)." }
+    {
+      "titre": "Renouvellement urbain",
+      "desc": "Transformation des friches industrielles et valorisation des dents creuses."
+    },
+    {
+      "titre": "Mobilité durable",
+      "desc": "Tramway, mobilité douce et contournement routier."
+    },
+    {
+      "titre": "Tourisme intégré",
+      "desc": "Zone d'Expansion Touristique (ZET) et valorisation littorale."
+    },
+    {
+      "titre": "Agriculture urbaine",
+      "desc": "Agriparcs et agriculture résiliente."
+    },
+    {
+      "titre": "Industrie innovante",
+      "desc": "Extension de la zone d'activité et transition énergétique."
+    },
+    {
+      "titre": "Équipements structurants",
+      "desc": "Programmation urbaine prioritaire (lycées, CEM, hôpital, sport)."
+    }
   ],
-  "budgetTotal": "227 milliards DZD"
+  "budgetTotal": "227 milliards DZD",
+  "attachments": []
 }

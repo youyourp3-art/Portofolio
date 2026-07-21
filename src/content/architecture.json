@@ -1,12 +1,28 @@
 {
   "intro": "La structure technique du système que je développe pour la gestion de données territoriales.",
   "layers": [
-    { "label": "Frontend", "detail": "React + Vite — interface publique et tableau de bord d'administration." },
-    { "label": "API REST", "detail": "Express.js — routes d'authentification et de gestion des données territoriales." },
-    { "label": "Backend", "detail": "Node.js — logique métier, contrôle d'accès, traitement des requêtes." },
-    { "label": "Base de données", "detail": "SQLite — stockage relationnel des sections, cartes, démographie et équipements." },
-    { "label": "WebGIS", "detail": "Module cartographique (Leaflet, GeoServer, PostGIS) en développement séparé, pas encore intégré au backend actuel." }
+    {
+      "label": "Frontend",
+      "detail": "React + Vite — interface publique et tableau de bord d'administration."
+    },
+    {
+      "label": "API REST",
+      "detail": "Express.js — routes d'authentification et de gestion des données territoriales."
+    },
+    {
+      "label": "Backend",
+      "detail": "Node.js — logique métier, contrôle d'accès, traitement des requêtes."
+    },
+    {
+      "label": "Base de données",
+      "detail": "SQLite — stockage relationnel des sections, cartes, démographie et équipements."
+    },
+    {
+      "label": "WebGIS",
+      "detail": "Module cartographique (Leaflet, GeoServer, PostGIS) en développement séparé, pas encore intégré au backend actuel."
+    }
   ],
   "securityTitle": "Sécurité et accès",
-  "securityText": "L'interface d'administration est séparée de la partie publique et protégée par authentification, afin que la consultation des données cartographiques reste libre pendant que leur modification reste contrôlée."
+  "securityText": "L'interface d'administration est séparée de la partie publique et protégée par authentification, afin que la consultation des données cartographiques reste libre pendant que leur modification reste contrôlée.",
+  "attachments": []
 }

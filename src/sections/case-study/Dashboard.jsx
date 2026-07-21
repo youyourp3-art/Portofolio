@@ -1,5 +1,6 @@
 import { SubSection } from "./ui";
 import data from "../../content/case-study/dashboard.json";
+import { Attachments } from "../../components/Attachments";
 
 export default function Dashboard() {
   return (
@@ -16,6 +17,7 @@ export default function Dashboard() {
           ))}
         </div>
       </SubSection>
+      <Attachments items={data.attachments} title="Documents et captures complémentaires" />
     </div>
   );
 }

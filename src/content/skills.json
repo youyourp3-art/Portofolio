@@ -1,14 +1,82 @@
 {
   "intro": "Neuf domaines, du recueil de la donnée brute à sa mise en œuvre dans un système applicatif.",
   "domains": [
-    { "label": "SIG", "desc": "Traitement de données spatiales, gestion de couches, requêtes et jointures attributaires sous QGIS.", "tools": ["QGIS", "SQL"] },
-    { "label": "Cartographie", "desc": "Symbologie, mise en page cartographique, production de cartes thématiques pour des rapports de diagnostic territorial.", "tools": ["QGIS", "Layout Manager"] },
-    { "label": "Développement web", "desc": "Construction d'interfaces frontend et d'API backend pour des outils de gestion de données territoriales.", "tools": ["React", "Vite", "Node.js", "Express.js"] },
-    { "label": "Développement WebGIS", "desc": "Conception d'un système de visualisation et de gestion de données géospatiales en ligne — le module cartographique (Leaflet/GeoServer/PostGIS) est en cours de développement séparé.", "tools": ["Leaflet", "GeoServer", "PostGIS"] },
-    { "label": "Bases de données", "desc": "Modélisation et interrogation de bases de données relationnelles.", "tools": ["SQLite", "SQL"] },
-    { "label": "Analyse spatiale", "desc": "Analyse multicritère, analyse de réseau, traitement de données de télédétection.", "tools": ["QGIS", "Google Earth Engine"] },
-    { "label": "Géotraitement", "desc": "Automatisation de chaînes de traitement géospatial avec des scripts Python.", "tools": ["Python", "QGIS"] },
-    { "label": "Gestion de projet", "desc": "Structuration de projets académiques de diagnostic territorial, du recueil de données à la restitution.", "tools": ["Rapport", "Méthodologie"] },
-    { "label": "Aménagement urbain", "desc": "Diagnostic territorial, lecture réglementaire, formulation de recommandations d'aménagement.", "tools": ["PDAU", "POS", "RPA"] }
-  ]
+    {
+      "label": "SIG",
+      "desc": "Traitement de données spatiales, gestion de couches, requêtes et jointures attributaires sous QGIS.",
+      "tools": [
+        "QGIS",
+        "SQL"
+      ]
+    },
+    {
+      "label": "Cartographie",
+      "desc": "Symbologie, mise en page cartographique, production de cartes thématiques pour des rapports de diagnostic territorial.",
+      "tools": [
+        "QGIS",
+        "Layout Manager"
+      ]
+    },
+    {
+      "label": "Développement web",
+      "desc": "Construction d'interfaces frontend et d'API backend pour des outils de gestion de données territoriales.",
+      "tools": [
+        "React",
+        "Vite",
+        "Node.js",
+        "Express.js"
+      ]
+    },
+    {
+      "label": "Développement WebGIS",
+      "desc": "Conception d'un système de visualisation et de gestion de données géospatiales en ligne — le module cartographique (Leaflet/GeoServer/PostGIS) est en cours de développement séparé.",
+      "tools": [
+        "Leaflet",
+        "GeoServer",
+        "PostGIS"
+      ]
+    },
+    {
+      "label": "Bases de données",
+      "desc": "Modélisation et interrogation de bases de données relationnelles.",
+      "tools": [
+        "SQLite",
+        "SQL"
+      ]
+    },
+    {
+      "label": "Analyse spatiale",
+      "desc": "Analyse multicritère, analyse de réseau, traitement de données de télédétection.",
+      "tools": [
+        "QGIS",
+        "Google Earth Engine"
+      ]
+    },
+    {
+      "label": "Géotraitement",
+      "desc": "Automatisation de chaînes de traitement géospatial avec des scripts Python.",
+      "tools": [
+        "Python",
+        "QGIS"
+      ]
+    },
+    {
+      "label": "Gestion de projet",
+      "desc": "Structuration de projets académiques de diagnostic territorial, du recueil de données à la restitution.",
+      "tools": [
+        "Rapport",
+        "Méthodologie"
+      ]
+    },
+    {
+      "label": "Aménagement urbain",
+      "desc": "Diagnostic territorial, lecture réglementaire, formulation de recommandations d'aménagement.",
+      "tools": [
+        "PDAU",
+        "POS",
+        "RPA"
+      ]
+    }
+  ],
+  "attachments": []
 }

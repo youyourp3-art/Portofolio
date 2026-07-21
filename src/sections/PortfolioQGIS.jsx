@@ -1,5 +1,6 @@
 import { PageShell, Placeholder } from "../components/PageShell";
 import { MediaImage } from "../components/Media";
+import { Attachments } from "../components/Attachments";
 import { useLang } from "../context/LangContext";
 import qgisFr from "../content/qgis.json";
 
@@ -46,6 +47,7 @@ export default function PortfolioQGIS({ onSelect }) {
           <span className="font-mono text-xs text-inkfade">{c.add}</span>
         </div>
       </div>
+      <Attachments items={qgisFr.attachments} title="Documents et captures complémentaires" />
     </PageShell>
   );
 }

@@ -37,6 +37,13 @@ collections:
               - { label: "Identifiant (ne pas changer)", name: "id", widget: "string" }
               - { label: "Titre", name: "t", widget: "string" }
               - { label: "Description", name: "d", widget: "string" }
+          - label: "Pièces jointes (images ou documents)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Légende / nom", name: "label", widget: "string", required: false }
+              - { label: "Fichier (image ou document)", name: "file", widget: "file" }
 
       - name: "about"
         label: "02 — À propos"
@@ -50,6 +57,13 @@ collections:
           - { label: "Formation 2 — texte", name: "f2", widget: "text" }
           - { label: "Pourquoi la géomatique", name: "p3", widget: "text" }
           - { label: "Ce que je cherche", name: "p4", widget: "text" }
+          - label: "Pièces jointes (images ou documents)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Légende / nom", name: "label", widget: "string", required: false }
+              - { label: "Fichier (image ou document)", name: "file", widget: "file" }
 
       - name: "competences"
         label: "03 — Compétences"
@@ -63,6 +77,13 @@ collections:
               - { label: "Nom du domaine", name: "label", widget: "string" }
               - { label: "Description", name: "desc", widget: "text" }
               - { label: "Outils associés", name: "tools", widget: "list" }
+          - label: "Pièces jointes (images ou documents)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Légende / nom", name: "label", widget: "string", required: false }
+              - { label: "Fichier (image ou document)", name: "file", widget: "file" }
 
       - name: "technologies"
         label: "04 — Technologies"
@@ -81,6 +102,13 @@ collections:
                   - { label: "Nom", name: "name", widget: "string" }
                   - { label: "Description courte", name: "note", widget: "string" }
                   - { label: "Statut", name: "status", widget: "select", options: ["actif", "dev"] }
+          - label: "Pièces jointes (images ou documents)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Légende / nom", name: "label", widget: "string", required: false }
+              - { label: "Fichier (image ou document)", name: "file", widget: "file" }
 
       - name: "architecture"
         label: "05 — Architecture"
@@ -95,6 +123,13 @@ collections:
               - { label: "Détail", name: "detail", widget: "text" }
           - { label: "Titre — Sécurité", name: "securityTitle", widget: "string" }
           - { label: "Texte — Sécurité", name: "securityText", widget: "text" }
+          - label: "Pièces jointes (images ou documents)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Légende / nom", name: "label", widget: "string", required: false }
+              - { label: "Fichier (image ou document)", name: "file", widget: "file" }
 
       - name: "qgis"
         label: "06 — Portfolio QGIS"
@@ -110,6 +145,13 @@ collections:
               - { label: "Description", name: "desc", widget: "text" }
               - { label: "Clé média (ne pas changer)", name: "mediaKey", widget: "string" }
           - { label: "Note d'ajout", name: "addNote", widget: "string" }
+          - label: "Pièces jointes (images ou documents)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Légende / nom", name: "label", widget: "string", required: false }
+              - { label: "Fichier (image ou document)", name: "file", widget: "file" }
 
       - name: "webgis"
         label: "07 — WebGIS"
@@ -120,6 +162,13 @@ collections:
           - { label: "Texte section", name: "sectionText", widget: "text" }
           - { label: "Titre fonctionnalités", name: "featuresTitle", widget: "string" }
           - { label: "Fonctionnalités", name: "features", widget: "list" }
+          - label: "Pièces jointes (images ou documents)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Légende / nom", name: "label", widget: "string", required: false }
+              - { label: "Fichier (image ou document)", name: "file", widget: "file" }
 
       - name: "demo"
         label: "08 — Démonstration"
@@ -132,6 +181,13 @@ collections:
             fields:
               - { label: "Nom de l'étape", name: "label", widget: "string" }
               - { label: "Capture / GIF", name: "image", widget: "image", required: false }
+          - label: "Pièces jointes (images ou documents)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Légende / nom", name: "label", widget: "string", required: false }
+              - { label: "Fichier (image ou document)", name: "file", widget: "file" }
 
       - name: "admin_page"
         label: "10 — Administration"
@@ -144,6 +200,13 @@ collections:
             fields:
               - { label: "Titre du module", name: "title", widget: "string" }
               - { label: "Éléments gérés", name: "items", widget: "list" }
+          - label: "Pièces jointes (images ou documents)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Légende / nom", name: "label", widget: "string", required: false }
+              - { label: "Fichier (image ou document)", name: "file", widget: "file" }
 
       - name: "contact"
         label: "11 — Contact"
@@ -151,6 +214,13 @@ collections:
         fields:
           - { label: "Introduction", name: "intro", widget: "text" }
           - { label: "Bio courte", name: "bio", widget: "text" }
+          - label: "Pièces jointes (images ou documents)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Légende / nom", name: "label", widget: "string", required: false }
+              - { label: "Fichier (image ou document)", name: "file", widget: "file" }
 
   - name: "media"
     label: "Médiathèque"
@@ -191,6 +261,13 @@ collections:
             fields:
               - { label: "Titre", name: "titre", widget: "string" }
               - { label: "Détail", name: "detail", widget: "text" }
+          - label: "Pièces jointes (images ou documents)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Légende / nom", name: "label", widget: "string", required: false }
+              - { label: "Fichier (image ou document)", name: "file", widget: "file" }
 
       - name: "demographie"
         label: "02 — Démographie"
@@ -214,6 +291,22 @@ collections:
               - { label: "Taux de croissance (%)", name: "taux", widget: "number" }
               - { label: "Ratio de dépendance", name: "dependance", widget: "number" }
           - { label: "Note sur l'évolution", name: "noteEvolution", widget: "text" }
+          - label: "Scénarios de projection (comparaison)"
+            name: "scenarios"
+            widget: "list"
+            required: false
+            hint: "Chaque scénario a sa propre courbe d'évolution — sélectionnable sur le site via un bouton."
+            fields:
+              - { label: "Nom du scénario", name: "name", widget: "string" }
+              - label: "Évolution du scénario"
+                name: "evolution"
+                widget: "list"
+                fields:
+                  - { label: "Année", name: "annee", widget: "number" }
+                  - { label: "Population", name: "population", widget: "number" }
+                  - { label: "Densité (hab/km²)", name: "densite", widget: "number" }
+                  - { label: "Taux de croissance (%)", name: "taux", widget: "number" }
+                  - { label: "Ratio de dépendance", name: "dependance", widget: "number" }
           - { label: "Structure par âge (points)", name: "structureAge", widget: "list" }
           - label: "AFOM démographique"
             name: "afom"
@@ -223,6 +316,13 @@ collections:
               - { label: "Faiblesses", name: "faiblesses", widget: "list" }
               - { label: "Opportunités", name: "opportunites", widget: "list" }
               - { label: "Menaces", name: "menaces", widget: "list" }
+          - label: "Pièces jointes (images ou documents)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Légende / nom", name: "label", widget: "string", required: false }
+              - { label: "Fichier (image ou document)", name: "file", widget: "file" }
 
       - name: "cartographie"
         label: "03 — Cartographie"
@@ -237,6 +337,13 @@ collections:
               - { label: "Plage (ex. 1–7)", name: "range", widget: "string" }
               - { label: "Image d'illustration", name: "img", widget: "image" }
           - { label: "Note", name: "note", widget: "text" }
+          - label: "Pièces jointes (images ou documents)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Légende / nom", name: "label", widget: "string", required: false }
+              - { label: "Fichier (image ou document)", name: "file", widget: "file" }
 
       - name: "equipements"
         label: "04 — Équipements"
@@ -255,6 +362,13 @@ collections:
                   - { label: "Nom", name: "nom", widget: "string" }
                   - { label: "Existant", name: "existant", widget: "number" }
                   - { label: "Besoin estimé", name: "besoin", widget: "number" }
+          - label: "Pièces jointes (images ou documents)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Légende / nom", name: "label", widget: "string", required: false }
+              - { label: "Fichier (image ou document)", name: "file", widget: "file" }
 
       - name: "afom"
         label: "05 — AFOM"
@@ -272,6 +386,13 @@ collections:
               - { label: "Titre", name: "titre", widget: "string" }
               - { label: "Description", name: "desc", widget: "text" }
           - { label: "Budget total", name: "budgetTotal", widget: "string" }
+          - label: "Pièces jointes (images ou documents)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Légende / nom", name: "label", widget: "string", required: false }
+              - { label: "Fichier (image ou document)", name: "file", widget: "file" }
 
       - name: "strategie"
         label: "06 — Stratégie"
@@ -306,6 +427,13 @@ collections:
             fields:
               - { label: "Valeur", name: "value", widget: "string" }
               - { label: "Libellé", name: "label", widget: "string" }
+          - label: "Pièces jointes (images ou documents)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Légende / nom", name: "label", widget: "string", required: false }
+              - { label: "Fichier (image ou document)", name: "file", widget: "file" }
 
       - name: "dashboard"
         label: "07 — Dashboard"
@@ -318,3 +446,10 @@ collections:
             fields:
               - { label: "Nom", name: "nom", widget: "string" }
               - { label: "Description", name: "desc", widget: "text" }
+          - label: "Pièces jointes (images ou documents)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Légende / nom", name: "label", widget: "string", required: false }
+              - { label: "Fichier (image ou document)", name: "file", widget: "file" }

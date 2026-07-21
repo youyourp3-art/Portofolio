@@ -2,6 +2,7 @@ import { PageShell } from "../components/PageShell";
 import { MediaImage } from "../components/Media";
 import { useLang } from "../context/LangContext";
 import webgisFr from "../content/webgis.json";
+import { Attachments } from "../components/Attachments";
 
 const copy = {
   fr: {
@@ -54,6 +55,7 @@ export default function WebGIS({ onSelect }) {
         </ul>
       </section>
       <MediaImage mediaKey="webgisScreen" alt="Interface WebGIS" fallback={c.ph} />
+      <Attachments items={webgisFr.attachments} title="Documents et captures complémentaires" />
     </PageShell>
   );
 }

@@ -1,6 +1,7 @@
 import { PageShell, Placeholder } from "../components/PageShell";
 import { useLang } from "../context/LangContext";
 import adminFr from "../content/admin.json";
+import { Attachments } from "../components/Attachments";
 
 const modulesDe = [
   { title: "Modul 1 — QGIS-Portfolio", items: ["Projekte", "Kategorien", "Beschreibungen", "Technologien", "Bilder", "QGIS-Screenshots", "Layout-Screenshots", "Anzeigereihenfolge"] },
@@ -44,6 +45,7 @@ export default function Admin({ onSelect }) {
         ))}
       </div>
       <Placeholder label={c.ph} />
+      <Attachments items={adminFr.attachments} title="Documents et captures complémentaires" />
     </PageShell>
   );
 }

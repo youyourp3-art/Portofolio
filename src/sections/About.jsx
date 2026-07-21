@@ -2,6 +2,7 @@ import { PageShell } from "../components/PageShell";
 import { MediaImage } from "../components/Media";
 import { useLang } from "../context/LangContext";
 import aboutContent from "../content/about.json";
+import { Attachments } from "../components/Attachments";
 
 const copy = {
   fr: {
@@ -75,6 +76,7 @@ export default function About({ onSelect }) {
         fallback={c.photo}
         className="w-full max-w-xs border border-line"
       />
+      <Attachments items={aboutContent.attachments} title="Documents et captures complémentaires" />
     </PageShell>
   );
 }

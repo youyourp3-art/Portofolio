@@ -1,5 +1,6 @@
 import { SubSection, AfomBlock } from "./ui";
 import data from "../../content/case-study/afom.json";
+import { Attachments } from "../../components/Attachments";
 
 export default function Afom() {
   return (
@@ -29,6 +30,7 @@ export default function Afom() {
         <span className="font-display text-lg text-ink">{data.budgetTotal}</span>
         <span className="font-mono text-xs text-inkfade"> sur la période 2025–2040</span>
       </div>
+      <Attachments items={data.attachments} title="Documents et captures complémentaires" />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { PageShell } from "../components/PageShell";
 import { useLang } from "../context/LangContext";
 import techContentFr from "../content/technologies.json";
+import { Attachments } from "../components/Attachments";
 
 const groupLabelDe = { "SIG & Géomatique": "GIS & Geomatik", "WebGIS": "WebGIS", "Développement": "Entwicklung", "Bureautique": "Bürosoftware" };
 const noteDe = {
@@ -80,6 +81,7 @@ export default function Technologies({ onSelect }) {
           </div>
         ))}
       </div>
+      <Attachments items={techContentFr.attachments} title="Documents et captures complémentaires" />
     </PageShell>
   );
 }

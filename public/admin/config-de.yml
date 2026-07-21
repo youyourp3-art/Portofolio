@@ -1,0 +1,453 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+locale: "de"
+
+collections:
+  - name: "pages"
+    label: "Seiten der Website"
+    files:
+      - name: "home"
+        label: "01 — Start"
+        file: "src/content/home.json"
+        fields:
+          - { label: "Titel — Zeile 1", name: "tagline1", widget: "string" }
+          - { label: "Titel — Zeile 2", name: "tagline2", widget: "string" }
+          - { label: "Titel — Zeile 3", name: "tagline3", widget: "string" }
+          - { label: "Einleitungstext", name: "intro", widget: "text" }
+          - { label: "Button 1", name: "cta1", widget: "string" }
+          - { label: "Button 2", name: "cta2", widget: "string" }
+          - label: "Wichtige Statistiken"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Wert", name: "value", widget: "string" }
+              - { label: "Bezeichnung", name: "label", widget: "string" }
+          - { label: "Titel Linkbereich", name: "explore", widget: "string" }
+          - label: "Navigationskarten"
+            name: "cards"
+            widget: "list"
+            fields:
+              - { label: "Kennung (nicht ändern)", name: "id", widget: "string" }
+              - { label: "Titel", name: "t", widget: "string" }
+              - { label: "Beschreibung", name: "d", widget: "string" }
+          - label: "Anhänge (Bilder oder Dokumente)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Beschriftung / Name", name: "label", widget: "string", required: false }
+              - { label: "Datei (Bild oder Dokument)", name: "file", widget: "file" }
+
+      - name: "about"
+        label: "02 — Über mich"
+        file: "src/content/about.json"
+        fields:
+          - { label: "Einleitung", name: "intro", widget: "text" }
+          - { label: "Werdegang", name: "p1", widget: "text" }
+          - { label: "Ausbildung 1 — Zeitraum", name: "f1y", widget: "string" }
+          - { label: "Ausbildung 1 — Text", name: "f1", widget: "text" }
+          - { label: "Ausbildung 2 — Zeitraum", name: "f2y", widget: "string" }
+          - { label: "Ausbildung 2 — Text", name: "f2", widget: "text" }
+          - { label: "Warum Geomatik", name: "p3", widget: "text" }
+          - { label: "Was ich suche", name: "p4", widget: "text" }
+          - label: "Anhänge (Bilder oder Dokumente)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Beschriftung / Name", name: "label", widget: "string", required: false }
+              - { label: "Datei (Bild oder Dokument)", name: "file", widget: "file" }
+
+      - name: "competences"
+        label: "03 — Kompetenzen"
+        file: "src/content/skills.json"
+        fields:
+          - { label: "Einleitung", name: "intro", widget: "text" }
+          - label: "Bereiche"
+            name: "domains"
+            widget: "list"
+            fields:
+              - { label: "Name des Bereichs", name: "label", widget: "string" }
+              - { label: "Beschreibung", name: "desc", widget: "text" }
+              - { label: "Zugehörige Werkzeuge", name: "tools", widget: "list" }
+          - label: "Anhänge (Bilder oder Dokumente)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Beschriftung / Name", name: "label", widget: "string", required: false }
+              - { label: "Datei (Bild oder Dokument)", name: "file", widget: "file" }
+
+      - name: "technologies"
+        label: "04 — Technologien"
+        file: "src/content/technologies.json"
+        fields:
+          - { label: "Einleitung", name: "intro", widget: "text" }
+          - label: "Technologiegruppen"
+            name: "groups"
+            widget: "list"
+            fields:
+              - { label: "Gruppenname", name: "label", widget: "string" }
+              - label: "Technologien"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Kurzbeschreibung", name: "note", widget: "string" }
+                  - { label: "Status", name: "status", widget: "select", options: ["actif", "dev"] }
+          - label: "Anhänge (Bilder oder Dokumente)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Beschriftung / Name", name: "label", widget: "string", required: false }
+              - { label: "Datei (Bild oder Dokument)", name: "file", widget: "file" }
+
+      - name: "architecture"
+        label: "05 — Architektur"
+        file: "src/content/architecture.json"
+        fields:
+          - { label: "Einleitung", name: "intro", widget: "text" }
+          - label: "Systemschichten"
+            name: "layers"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "label", widget: "string" }
+              - { label: "Detail", name: "detail", widget: "text" }
+          - { label: "Titel — Sicherheit", name: "securityTitle", widget: "string" }
+          - { label: "Text — Sicherheit", name: "securityText", widget: "text" }
+          - label: "Anhänge (Bilder oder Dokumente)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Beschriftung / Name", name: "label", widget: "string", required: false }
+              - { label: "Datei (Bild oder Dokument)", name: "file", widget: "file" }
+
+      - name: "qgis"
+        label: "06 — QGIS-Portfolio"
+        file: "src/content/qgis.json"
+        fields:
+          - { label: "Einleitung", name: "intro", widget: "text" }
+          - label: "Projekte"
+            name: "projects"
+            widget: "list"
+            fields:
+              - { label: "Kennzeichnung (z. B. PROJEKT 01)", name: "tag", widget: "string" }
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Beschreibung", name: "desc", widget: "text" }
+              - { label: "Medienschlüssel (nicht ändern)", name: "mediaKey", widget: "string" }
+          - { label: "Hinweis zum Hinzufügen", name: "addNote", widget: "string" }
+          - label: "Anhänge (Bilder oder Dokumente)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Beschriftung / Name", name: "label", widget: "string", required: false }
+              - { label: "Datei (Bild oder Dokument)", name: "file", widget: "file" }
+
+      - name: "webgis"
+        label: "07 — WebGIS"
+        file: "src/content/webgis.json"
+        fields:
+          - { label: "Einleitung", name: "intro", widget: "text" }
+          - { label: "Abschnittstitel", name: "sectionTitle", widget: "string" }
+          - { label: "Abschnittstext", name: "sectionText", widget: "text" }
+          - { label: "Titel Funktionen", name: "featuresTitle", widget: "string" }
+          - { label: "Funktionen", name: "features", widget: "list" }
+          - label: "Anhänge (Bilder oder Dokumente)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Beschriftung / Name", name: "label", widget: "string", required: false }
+              - { label: "Datei (Bild oder Dokument)", name: "file", widget: "file" }
+
+      - name: "demo"
+        label: "08 — Demonstration"
+        file: "src/content/demo.json"
+        fields:
+          - { label: "Einleitung", name: "intro", widget: "text" }
+          - label: "Schritte"
+            name: "flows"
+            widget: "list"
+            fields:
+              - { label: "Name des Schritts", name: "label", widget: "string" }
+              - { label: "Screenshot / GIF", name: "image", widget: "image", required: false }
+          - label: "Anhänge (Bilder oder Dokumente)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Beschriftung / Name", name: "label", widget: "string", required: false }
+              - { label: "Datei (Bild oder Dokument)", name: "file", widget: "file" }
+
+      - name: "admin_page"
+        label: "10 — Administration"
+        file: "src/content/admin.json"
+        fields:
+          - { label: "Einleitung", name: "intro", widget: "text" }
+          - label: "Module"
+            name: "modules"
+            widget: "list"
+            fields:
+              - { label: "Modultitel", name: "title", widget: "string" }
+              - { label: "Verwaltete Elemente", name: "items", widget: "list" }
+          - label: "Anhänge (Bilder oder Dokumente)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Beschriftung / Name", name: "label", widget: "string", required: false }
+              - { label: "Datei (Bild oder Dokument)", name: "file", widget: "file" }
+
+      - name: "contact"
+        label: "11 — Kontakt"
+        file: "src/content/contact.json"
+        fields:
+          - { label: "Einleitung", name: "intro", widget: "text" }
+          - { label: "Kurzbiografie", name: "bio", widget: "text" }
+          - label: "Anhänge (Bilder oder Dokumente)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Beschriftung / Name", name: "label", widget: "string", required: false }
+              - { label: "Datei (Bild oder Dokument)", name: "file", widget: "file" }
+
+  - name: "media"
+    label: "Mediathek"
+    files:
+      - name: "assets"
+        label: "Dateien der Website"
+        file: "src/content/media.json"
+        fields:
+          - { label: "Profilfoto", name: "profilePhoto", widget: "image", required: false }
+          - { label: "Lebenslauf (PDF)", name: "cvPdf", widget: "file", required: false }
+          - { label: "Anschreiben — allgemein (PDF)", name: "lettrePdf", widget: "file", required: false }
+          - { label: "Anschreiben — Trier (PDF)", name: "lettreTrierPdf", widget: "file", required: false }
+          - { label: "QGIS-Screenshot — Diagnostik Djelfa", name: "qgisDjelfa", widget: "image", required: false }
+          - { label: "QGIS-Screenshot — Studie Sétif", name: "qgisSetif", widget: "image", required: false }
+          - { label: "Screenshot WebGIS-Oberfläche", name: "webgisScreen", widget: "image", required: false }
+
+  - name: "diagnostic"
+    label: "Diagnostik Aïn Bénian"
+    files:
+      - name: "accueil"
+        label: "01 — Start"
+        file: "src/content/case-study/accueil.json"
+        fields:
+          - { label: "Tags", name: "tags", widget: "list" }
+          - { label: "Titel", name: "titre", widget: "string" }
+          - { label: "Einleitung", name: "intro", widget: "text" }
+          - label: "Wichtige Statistiken"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Wert", name: "value", widget: "string" }
+              - { label: "Bezeichnung", name: "label", widget: "string" }
+          - { label: "Zentrale Problemstellung", name: "problematique", widget: "text" }
+          - { label: "Leitende Hypothese", name: "hypothese", widget: "text" }
+          - label: "Paradigmenwechsel"
+            name: "paradigmes"
+            widget: "list"
+            fields:
+              - { label: "Titel", name: "titre", widget: "string" }
+              - { label: "Detail", name: "detail", widget: "text" }
+          - label: "Anhänge (Bilder oder Dokumente)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Beschriftung / Name", name: "label", widget: "string", required: false }
+              - { label: "Datei (Bild oder Dokument)", name: "file", widget: "file" }
+
+      - name: "demographie"
+        label: "02 — Demografie"
+        file: "src/content/case-study/demographie.json"
+        fields:
+          - { label: "Einleitung", name: "intro", widget: "text" }
+          - label: "Wichtige Statistiken"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Wert", name: "value", widget: "string" }
+              - { label: "Bezeichnung", name: "label", widget: "string" }
+              - { label: "Zusatztext", name: "sub", widget: "string", required: false }
+          - label: "Entwicklung nach Jahr"
+            name: "evolution"
+            widget: "list"
+            fields:
+              - { label: "Jahr", name: "annee", widget: "number" }
+              - { label: "Bevölkerung", name: "population", widget: "number" }
+              - { label: "Dichte (Einw./km²)", name: "densite", widget: "number" }
+              - { label: "Wachstumsrate (%)", name: "taux", widget: "number" }
+              - { label: "Abhängigkeitsquotient", name: "dependance", widget: "number" }
+          - { label: "Hinweis zur Entwicklung", name: "noteEvolution", widget: "text" }
+          - label: "Prognoseszenarien (Vergleich)"
+            name: "scenarios"
+            widget: "list"
+            required: false
+            hint: "Jedes Szenario hat seine eigene Entwicklungskurve — auf der Website per Button auswählbar."
+            fields:
+              - { label: "Name des Szenarios", name: "name", widget: "string" }
+              - label: "Entwicklung des Szenarios"
+                name: "evolution"
+                widget: "list"
+                fields:
+                  - { label: "Jahr", name: "annee", widget: "number" }
+                  - { label: "Bevölkerung", name: "population", widget: "number" }
+                  - { label: "Dichte (Einw./km²)", name: "densite", widget: "number" }
+                  - { label: "Wachstumsrate (%)", name: "taux", widget: "number" }
+                  - { label: "Abhängigkeitsquotient", name: "dependance", widget: "number" }
+          - { label: "Altersstruktur (Stichpunkte)", name: "structureAge", widget: "list" }
+          - label: "SWOT Demografie"
+            name: "afom"
+            widget: "object"
+            fields:
+              - { label: "Stärken", name: "atouts", widget: "list" }
+              - { label: "Schwächen", name: "faiblesses", widget: "list" }
+              - { label: "Chancen", name: "opportunites", widget: "list" }
+              - { label: "Risiken", name: "menaces", widget: "list" }
+          - label: "Anhänge (Bilder oder Dokumente)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Beschriftung / Name", name: "label", widget: "string", required: false }
+              - { label: "Datei (Bild oder Dokument)", name: "file", widget: "file" }
+
+      - name: "cartographie"
+        label: "03 — Kartografie"
+        file: "src/content/case-study/cartographie.json"
+        fields:
+          - { label: "Einleitung", name: "intro", widget: "text" }
+          - label: "Kartenkategorien"
+            name: "categories"
+            widget: "list"
+            fields:
+              - { label: "Kategorie", name: "cat", widget: "string" }
+              - { label: "Bereich (z. B. 1–7)", name: "range", widget: "string" }
+              - { label: "Beispielbild", name: "img", widget: "image" }
+          - { label: "Hinweis", name: "note", widget: "text" }
+          - label: "Anhänge (Bilder oder Dokumente)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Beschriftung / Name", name: "label", widget: "string", required: false }
+              - { label: "Datei (Bild oder Dokument)", name: "file", widget: "file" }
+
+      - name: "equipements"
+        label: "04 — Einrichtungen"
+        file: "src/content/case-study/equipements.json"
+        fields:
+          - { label: "Einleitung", name: "intro", widget: "text" }
+          - label: "Einrichtungsgruppen"
+            name: "groupes"
+            widget: "list"
+            fields:
+              - { label: "Kategorie", name: "cat", widget: "string" }
+              - label: "Elemente"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "nom", widget: "string" }
+                  - { label: "Vorhanden", name: "existant", widget: "number" }
+                  - { label: "Geschätzter Bedarf", name: "besoin", widget: "number" }
+          - label: "Anhänge (Bilder oder Dokumente)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Beschriftung / Name", name: "label", widget: "string", required: false }
+              - { label: "Datei (Bild oder Dokument)", name: "file", widget: "file" }
+
+      - name: "afom"
+        label: "05 — SWOT"
+        file: "src/content/case-study/afom.json"
+        fields:
+          - { label: "Einleitung", name: "intro", widget: "text" }
+          - { label: "Stärken", name: "atouts", widget: "list" }
+          - { label: "Schwächen", name: "faiblesses", widget: "list" }
+          - { label: "Chancen", name: "opportunites", widget: "list" }
+          - { label: "Risiken", name: "menaces", widget: "list" }
+          - label: "Handlungsachsen"
+            name: "axes"
+            widget: "list"
+            fields:
+              - { label: "Titel", name: "titre", widget: "string" }
+              - { label: "Beschreibung", name: "desc", widget: "text" }
+          - { label: "Gesamtbudget", name: "budgetTotal", widget: "string" }
+          - label: "Anhänge (Bilder oder Dokumente)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Beschriftung / Name", name: "label", widget: "string", required: false }
+              - { label: "Datei (Bild oder Dokument)", name: "file", widget: "file" }
+
+      - name: "strategie"
+        label: "06 — Strategie"
+        file: "src/content/case-study/strategie.json"
+        fields:
+          - { label: "Einleitung", name: "intro", widget: "text" }
+          - label: "Leuchtturmprojekte"
+            name: "projets"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "nom", widget: "string" }
+              - { label: "Beschreibung", name: "desc", widget: "text" }
+              - { label: "Kosten", name: "cout", widget: "string" }
+              - { label: "Frist", name: "echeance", widget: "string" }
+              - { label: "Priorität", name: "priorite", widget: "string" }
+          - label: "Budget nach Achse"
+            name: "budgetAxes"
+            widget: "list"
+            fields:
+              - { label: "Achse", name: "axe", widget: "string" }
+              - { label: "Prozentsatz", name: "pourcentage", widget: "number" }
+          - label: "Zeitliche Staffelung"
+            name: "phasage"
+            widget: "list"
+            fields:
+              - { label: "Zeitraum", name: "periode", widget: "string" }
+              - { label: "Budget", name: "budget", widget: "string" }
+              - { label: "Hinweis", name: "note", widget: "text" }
+          - label: "Zukunftsstatistiken"
+            name: "visionStats"
+            widget: "list"
+            fields:
+              - { label: "Wert", name: "value", widget: "string" }
+              - { label: "Bezeichnung", name: "label", widget: "string" }
+          - label: "Anhänge (Bilder oder Dokumente)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Beschriftung / Name", name: "label", widget: "string", required: false }
+              - { label: "Datei (Bild oder Dokument)", name: "file", widget: "file" }
+
+      - name: "dashboard"
+        label: "07 — Dashboard"
+        file: "src/content/case-study/dashboard.json"
+        fields:
+          - { label: "Einleitung", name: "intro", widget: "text" }
+          - label: "Verwaltete Module"
+            name: "modules"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "nom", widget: "string" }
+              - { label: "Beschreibung", name: "desc", widget: "text" }
+          - label: "Anhänge (Bilder oder Dokumente)"
+            name: "attachments"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Beschriftung / Name", name: "label", widget: "string", required: false }
+              - { label: "Datei (Bild oder Dokument)", name: "file", widget: "file" }

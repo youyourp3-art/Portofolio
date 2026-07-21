@@ -1,6 +1,7 @@
 import { PageShell, Placeholder } from "../components/PageShell";
 import { useLang } from "../context/LangContext";
 import archFr from "../content/architecture.json";
+import { Attachments } from "../components/Attachments";
 
 const layersDe = [
   { label: "Frontend", detail: "React + Vite — öffentliche Oberfläche und Administrations-Dashboard." },
@@ -64,6 +65,7 @@ export default function Architecture({ onSelect }) {
       </section>
 
       <Placeholder label={c.ph} />
+      <Attachments items={archFr.attachments} title="Documents et captures complémentaires" />
     </PageShell>
   );
 }

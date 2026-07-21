@@ -71,3 +71,12 @@ s'inscrire, et ce mot de passe n'apparaît jamais dans le code.
   t'en servir ailleurs.
 - Si tu perds l'accès à ton email d'invitation, récupère l'accès depuis
   **Identity → tableau des utilisateurs** dans le dashboard Netlify.
+
+## Nouveautés — graphiques, pièces jointes, scénarios, panel bilingue
+
+- **Langue du panel `/admin`** : au premier accès, un écran demande de choisir Français ou Deutsch. Ce choix est mémorisé (dans le navigateur) — un petit bouton en bas à droite permet d'en changer à tout moment.
+- **Pièces jointes libres** : sur presque toutes les pages, un champ "Pièces jointes (images ou documents)" permet d'ajouter n'importe quel fichier (photo, PDF, capture...) sans toucher au code. Une image s'affiche en aperçu, un document devient un lien de téléchargement — automatique selon le type de fichier.
+- **Graphiques réels** : la page Démographie affiche désormais une vraie courbe d'évolution, la page Stratégie un camembert du budget par axe, la page Équipements un histogramme existant/besoin — tous alimentés par les données éditables dans `/admin`.
+- **Scénarios de projection** (page Démographie du diagnostic) : plusieurs jeux de données (ex. "Scénario bas", "Scénario haut") peuvent être ajoutés depuis `/admin` ; un bouton sur le site permet de basculer entre eux sur le graphique et le tableau.
+
+Après un redéploiement, repasse par `/admin` une fois : le premier écran de langue peut réapparaître (le choix est stocké par navigateur, pas par compte).

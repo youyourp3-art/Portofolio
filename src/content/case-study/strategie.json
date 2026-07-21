@@ -1,28 +1,101 @@
 {
   "intro": "Vision stratégique globale : de la ville extensive à la ville intensive — six axes d'intervention, un portefeuille de projets phares et une programmation budgétaire par période.",
   "projets": [
-    { "nom": "Tramway structurant", "desc": "2 lignes (14 km) — colonne vertébrale de la mobilité.", "cout": "15–20 Mds DZD", "echeance": "2030", "priorite": "CRITIQUE" },
-    { "nom": "Hôpital régional", "desc": "200–300 lits — urgences, chirurgie, maternité, gériatrie.", "cout": "15 Mds DZD", "echeance": "2028", "priorite": "CRITIQUE" },
-    { "nom": "Zone d'Expansion Touristique", "desc": "80–100 ha — 5 hôtels, port de plaisance, promenades.", "cout": "30 Mds DZD", "echeance": "2031", "priorite": "ÉLEVÉE" },
-    { "nom": "Renouvellement urbain haussmannien", "desc": "80 ha — alignements, gabarits harmonisés, mixité.", "cout": "80 Mds DZD", "echeance": "2032", "priorite": "TRÈS ÉLEVÉE" },
-    { "nom": "Réseau de pistes cyclables", "desc": "50 km — site propre, bandes, vélos en libre-service.", "cout": "500 M DZD", "echeance": "2027", "priorite": "ÉLEVÉE" },
-    { "nom": "17 espaces publics", "desc": "3 parcs, 8 jardins, 5 places, 4 squares.", "cout": "15 Mds DZD", "echeance": "2035", "priorite": "TRÈS ÉLEVÉE" }
+    {
+      "nom": "Tramway structurant",
+      "desc": "2 lignes (14 km) — colonne vertébrale de la mobilité.",
+      "cout": "15–20 Mds DZD",
+      "echeance": "2030",
+      "priorite": "CRITIQUE"
+    },
+    {
+      "nom": "Hôpital régional",
+      "desc": "200–300 lits — urgences, chirurgie, maternité, gériatrie.",
+      "cout": "15 Mds DZD",
+      "echeance": "2028",
+      "priorite": "CRITIQUE"
+    },
+    {
+      "nom": "Zone d'Expansion Touristique",
+      "desc": "80–100 ha — 5 hôtels, port de plaisance, promenades.",
+      "cout": "30 Mds DZD",
+      "echeance": "2031",
+      "priorite": "ÉLEVÉE"
+    },
+    {
+      "nom": "Renouvellement urbain haussmannien",
+      "desc": "80 ha — alignements, gabarits harmonisés, mixité.",
+      "cout": "80 Mds DZD",
+      "echeance": "2032",
+      "priorite": "TRÈS ÉLEVÉE"
+    },
+    {
+      "nom": "Réseau de pistes cyclables",
+      "desc": "50 km — site propre, bandes, vélos en libre-service.",
+      "cout": "500 M DZD",
+      "echeance": "2027",
+      "priorite": "ÉLEVÉE"
+    },
+    {
+      "nom": "17 espaces publics",
+      "desc": "3 parcs, 8 jardins, 5 places, 4 squares.",
+      "cout": "15 Mds DZD",
+      "echeance": "2035",
+      "priorite": "TRÈS ÉLEVÉE"
+    }
   ],
   "budgetAxes": [
-    { "axe": "Renouvellement urbain", "pourcentage": 45.4 },
-    { "axe": "Équipements", "pourcentage": 23.4 },
-    { "axe": "Mobilité", "pourcentage": 17 },
-    { "axe": "Économie", "pourcentage": 14.3 },
-    { "axe": "Infrastructures", "pourcentage": 5.7 }
+    {
+      "axe": "Renouvellement urbain",
+      "pourcentage": 45.4
+    },
+    {
+      "axe": "Équipements",
+      "pourcentage": 23.4
+    },
+    {
+      "axe": "Mobilité",
+      "pourcentage": 17
+    },
+    {
+      "axe": "Économie",
+      "pourcentage": 14.3
+    },
+    {
+      "axe": "Infrastructures",
+      "pourcentage": 5.7
+    }
   ],
   "phasage": [
-    { "periode": "Court terme — 2025–2030", "budget": "85 Mds DZD", "note": "Équipements urgents, tramway, espaces publics" },
-    { "periode": "Moyen terme — 2030–2035", "budget": "82 Mds DZD", "note": "Renouvellement urbain, ZET, contournement" },
-    { "periode": "Long terme — 2035–2040", "budget": "60 Mds DZD", "note": "Consolidation, équipements finaux" }
+    {
+      "periode": "Court terme — 2025–2030",
+      "budget": "85 Mds DZD",
+      "note": "Équipements urgents, tramway, espaces publics"
+    },
+    {
+      "periode": "Moyen terme — 2030–2035",
+      "budget": "82 Mds DZD",
+      "note": "Renouvellement urbain, ZET, contournement"
+    },
+    {
+      "periode": "Long terme — 2035–2040",
+      "budget": "60 Mds DZD",
+      "note": "Consolidation, équipements finaux"
+    }
   ],
   "visionStats": [
-    { "value": "204 821", "label": "Habitants visés 2040" },
-    { "value": "40+", "label": "Équipements programmés" },
-    { "value": "5 000", "label": "Emplois créés (ZET + zone d'activité)" }
-  ]
+    {
+      "value": "204 821",
+      "label": "Habitants visés 2040"
+    },
+    {
+      "value": "40+",
+      "label": "Équipements programmés"
+    },
+    {
+      "value": "5 000",
+      "label": "Emplois créés (ZET + zone d'activité)"
+    }
+  ],
+  "attachments": []
 }

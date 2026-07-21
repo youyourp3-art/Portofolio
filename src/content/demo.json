@@ -1,12 +1,34 @@
 {
   "intro": "Aperçu visuel du fonctionnement de la plateforme, étape par étape.",
   "flows": [
-    { "label": "Connexion", "image": "" },
-    { "label": "Navigation", "image": "" },
-    { "label": "Consultation d'une fiche", "image": "" },
-    { "label": "Ajout d'une donnée", "image": "" },
-    { "label": "Modification d'une donnée", "image": "" },
-    { "label": "Suppression", "image": "" },
-    { "label": "Recherche et filtres", "image": "" }
-  ]
+    {
+      "label": "Connexion",
+      "image": ""
+    },
+    {
+      "label": "Navigation",
+      "image": ""
+    },
+    {
+      "label": "Consultation d'une fiche",
+      "image": ""
+    },
+    {
+      "label": "Ajout d'une donnée",
+      "image": ""
+    },
+    {
+      "label": "Modification d'une donnée",
+      "image": ""
+    },
+    {
+      "label": "Suppression",
+      "image": ""
+    },
+    {
+      "label": "Recherche et filtres",
+      "image": ""
+    }
+  ],
+  "attachments": []
 }
